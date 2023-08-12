@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lcqingtian.github.io</id>
+    <title>lcqingtian</title>
+    <updated>2023-08-12T13:52:52.504Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lcqingtian.github.io"/>
+    <link rel="self" href="https://lcqingtian.github.io/atom.xml"/>
+    <subtitle>IT 知识</subtitle>
+    <logo>https://lcqingtian.github.io/images/avatar.png</logo>
+    <icon>https://lcqingtian.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, lcqingtian</rights>
+    <entry>
+        <title type="html"><![CDATA[AMD Ryzen Windows VPS]]></title>
+        <id>https://lcqingtian.github.io/post/amd-ryzen-windows-vps/</id>
+        <link href="https://lcqingtian.github.io/post/amd-ryzen-windows-vps/">
+        </link>
+        <updated>2023-08-12T13:17:36.000Z</updated>
+        <content type="html"><![CDATA[<p>当今数字世界中，性能和效率是不可或缺的。如果您正在寻找出色的性能和稳定性，以支持您的工作负载和项目，那么我们为您带来了一个令人兴奋的选择：AMD Ryzen Windows VPS，托管在洛杉矶的最佳位置！</p>
+<p>强大处理器和闪电般的存储<br>
+我们自豪地介绍 RackNerd 的 AMD Ryzen 3900X 处理器和 NVMe 驱动器驱动的 Windows VPS。这些处理器不仅性能卓越，还为您的任务提供了所需的速度和能力。而搭载在这些 VPS 上的 NVMe SSD 存储则为您提供了闪电般的读写速度，从而确保数据访问的迅捷和流畅。</p>
+<p>完美的操作系统选择<br>
+根据您的需求，您可以在订购表中选择 Windows Server 2012 或 2016 操作系统。这样，您可以根据项目的特性和所需的软件环境，进行最佳的操作系统选择，以实现最佳的性能和兼容性。</p>
+<p>灵活的配置选项<br>
+我们提供了多个配置选项，以满足不同项目和业务的需求。无论您是个人用户、开发人员还是企业，我们都有合适的配置来满足您的要求。</p>
+<p>2 GB 内存 | 1 个核心 | 35 GB NVMe 存储 | 2TB 带宽 | 1 个免费 IPv4 | 27.59 美元/月|<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=293">立即购买</a><br>
+4 GB 内存 | 2 个 vCore | 60 GB NVMe 存储 | 2TB 带宽 | 1 个免费 IPv4 | 30.59 美元/月|<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=294">立即购买</a><br>
+6 GB 内存 | 2 个 vCore | 85 GB NVMe 存储 | 3 TB 带宽 | 1 个免费 IPv4 | 35.59 美元/月|<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=295">立即购买</a><br>
+8 GB 内存 | 3 个 vCore | 110 GB NVMe 存储 | 5 TB 带宽 | 1 个免费 IPv4 | 44.59 美元/月|<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=296">立即购买</a><br>
+12 GB 内存 | 4 个 vCore | 160 GB NVMe 存储 | 6 TB 带宽 | 2 个免费 IPv4 | 64.59 美元/月|<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=297">立即购买</a><br>
+16 GB 内存 | 6 个 vCore | 200 GB NVMe 存储 | 10 TB 带宽 | 2 个免费 IPv4 | 89.59 美元/月|<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=298">立即购买</a><br>
+全面的管理员和远程桌面访问<br>
+与此强大的配置相匹配，每个 VPS 都包括完整的管理员和远程桌面访问权限。这意味着您可以轻松地管理和控制您的 VPS，以及在任何地方通过远程桌面连接进行访问。</p>
+<p>不要再受制于性能不足或受限的 VPS 解决方案。选择 RackNerd 的 AMD Ryzen Windows VPS，让您的项目腾飞！立即访问我们的网站，选择适合您的配置，开启更高性能的数字之旅！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AMD Ryzen VPS - Linux NVMe VPS]]></title>
+        <id>https://lcqingtian.github.io/post/amd-ryzen-vps-linux-nvme-vps/</id>
+        <link href="https://lcqingtian.github.io/post/amd-ryzen-vps-linux-nvme-vps/">
+        </link>
+        <updated>2023-08-11T05:14:23.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎进入 RackNerd 的 AMD Ryzen VPS 世界，我们为您提供高性能的 AMD Ryzen 3900X 处理器和快速的 NVMe 存储，让您体验卓越的性能！无论您是追求卓越性能的用户还是对速度要求较高的客户，我们的 AMD Ryzen VPS 都能满足您的需求。我们提供多种操作系统选项，如 CentOS、AlmaLinux、Debian、Ubuntu 等等，以满足您的不同需求。</p>
+<p>配备 NVMe SSD 的 AMD Ryzen Linux VPS<br>
+我们的 AMD Ryzen VPS 配备高速 NVMe SSD 存储，具有超过 1 GB/s 的磁盘 I/O 速度，让您的应用和数据得到飞速的响应。</p>
+<p>AMD Ryzen VPS 计划概览<br>
+中央处理器： 根据计划不同，提供 1 至 4 个 vCore<br>
+NVMe 存储： 10 GB 至 90 GB NVMe 固态硬盘<br>
+带宽： 根据计划不同，提供 500 GB 至 6 TB @ 1 Gbps<br>
+IPv4： 提供免费的 IPv4 地址<br>
+立即设置： 所有计划都支持即时设置<br>
+控制面板： 配备直观的控制面板，采用 KVM 虚拟化技术<br>
+512MB内存	1 个核心	10 GB NVMe 固态硬盘	500 GB @ 1Gbps	1个免费IP	$22.99 /年	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=500">现在下单</a><br>
+1 GB 内存	1 个核心	15 GB NVMe 固态硬盘	1 TB @ 1 Gbps	1个免费IP	17.99 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=501">现在下单</a><br>
+2 GB 内存	2 个 vCore	20 GB NVMe 固态硬盘	2TB@1Gbps	1个免费IP	20.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=502">现在下单</a><br>
+4 GB 内存	2 个 vCore	30 GB NVMe 固态硬盘	3 TB @ 1 Gbps	1个免费IP	24.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=503">现在下单</a><br>
+6 GB 内存	3 个 vCore	45 GB NVMe 固态硬盘	4 TB @ 1 Gbps	1个免费IP	27.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=504">现在下单</a><br>
+8GB内存	3 个 vCore	75 GB NVMe 固态硬盘	5 TB @ 1 Gbps	2个免费IP	36.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=505">现在下单</a><br>
+12 GB 内存	4 个 vCore	90 GB NVMe 固态硬盘	6 TB @ 1 Gbps	2个免费IP	55.99 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=506">现在下单</a></p>
+<p>直观的控制面板，由 KVM 虚拟化提供支持的 Ryzen VPS。<br>
+通过我们的 VPS 控制面板随时启动、停止、重新安装、控制台、重置您的服务器。</p>
+<p>每个 RackNerd Ryzen VPS 均包含 1Gbps 网络速度。不要满足于更少！</p>
+<p>强大的 AMD 锐龙处理器<br>
+RackNerd 的 Ryzen VPS 由最新、最先进的 AMD Ryzen 3900X 处理器提供支持。</p>
+<p>火箭般的速度<br>
+我们的网络可以为您提供火箭般的速度，并通过 Noction IRP 进行优化！</p>
+<p>NVMe存储<br>
+我们所有的 Ryzen VPS 均由纯 NVMe 存储提供支持，可实现当今最快的磁盘性能！</p>
+<p>24x7 支持<br>
+需要服务器专家的支持？RackNerd 每周 7 天、每天 24 小时为您提供帮助。<br>
+经常问的问题<br>
+了解有关我们服务的更多信息或如有其他问题 请联系我们！<br>
+选择配备 Ryzen 处理器的 VPS 有哪些好处？<br>
+AMD Ryzen 处理器最近席卷了市场，这要归功于这些 CPU 提供的前所未有的性能。例如，在大多数情况下，一个 Ryzen 核心就相当于多个 Intel Xeon 核心，更不用说您通过我们的 AMD Ryzen 平台获得的大量单线程性能了。为了进一步结合极快的 CPU，我们的 Ryzen VPS 由 RAID 保护存储阵列中的纯 NVMe 存储提供支持，为您提供与 CPU 性能保持同步的磁盘性能！</p>
+<p>我以后可以更改服务器的操作系统吗？<br>
+是的！通过我们直观的 VPS 控制面板，您可以随时重新安装 VPS 操作系统，并根据需要切换发行版。我们提供多种不同的 Linux 操作系统选项供您选择。我们还可以根据要求安装您自己的 ISO。</p>
+<p>我可以稍后升级我的 VPS 计划吗？<br>
+是的，您可以稍后将您的 VPS 升级到下一个计划。过渡是无缝的，只需要一分钟的停机时间来重新启动，升级即可生效。</p>
+<p>我需要等待多长时间才能激活我的 VPS 服务？<br>
+RackNerd 的 Ryzen VPS 套餐在您完成订单后立即激活。您将能够在几分钟内开始使用它。</p>
+<p>我可以使用 KVM VPS 获取 IPv6 地址吗？<br>
+如果部署在我们的洛杉矶 DC-02 地点，RackNerd 可根据请求提供最多 100 个免费 IPv6 地址。请在下单后打开支持票以请​​求此服务。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[洛杉矶部署 KVM VPS 解决方案]]></title>
+        <id>https://lcqingtian.github.io/post/luo-shan-ji-bu-shu-kvm-vps-jie-jue-fang-an/</id>
+        <link href="https://lcqingtian.github.io/post/luo-shan-ji-bu-shu-kvm-vps-jie-jue-fang-an/">
+        </link>
+        <updated>2023-08-11T04:57:20.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎来到 RackNerd，您的首选 KVM VPS 解决方案提供商！借助先进的 RAID-10 技术保护的纯 SSD 存储，我们的 KVM VPS 解决方案为您提供稳定、高性能的虚拟服务器体验。不论您身在何地，我们的服务即时配置，涵盖洛杉矶、圣何塞、西雅图、达拉斯、亚特兰大、芝加哥、新泽西、纽约、阿什本、阿姆斯特丹和法国等地的 KVM VPS 部署。</p>
+<p>RackNerd KVM 虚拟专用服务器计划<br>
+我们的 KVM VPS 解决方案为您提供出色的性能、灵活的配置和直观的控制面板。无论您是个人用户还是企业，都可以从以下多个计划中找到最适合您需求的一款。</p>
+<p>KVM 虚拟专用服务器计划<br>
+所有计划都包括即时设置和带有 KVM 虚拟化的直观控制面板<br>
+计划	中央处理器	固态硬盘存储	带宽	IPv4	价钱	命令<br>
+512MB内存	1 个核心	15 GB RAID-10 固态硬盘	500 GB @ 1Gbps	1个免费IP	$22.99 /年	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=570">现在下单</a><br>
+1 GB 内存	2 个核心	50 GB RAID-10 固态硬盘	1 TB @ 1 Gbps	1个免费IP	17.99 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=20">现在下单</a><br>
+2 GB 内存	3 个核心	75 GB RAID-10 固态硬盘	2TB@1Gbps	1个免费IP	20.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=21">现在下单</a><br>
+4 GB 内存	4 个核心	130 GB RAID-10 固态硬盘	3 TB @ 1 Gbps	1个免费IP	24.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=22">现在下单</a><br>
+6 GB 内存	5 个核心	170 GB RAID-10 固态硬盘	4 TB @ 1 Gbps	1个免费IP	27.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=23">现在下单</a><br>
+8GB内存	6 个核心	220 GB RAID-10 固态硬盘	5 TB @ 1 Gbps	2个免费IP	36.59 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=24">现在下单</a><br>
+12 GB 内存	7 个核心	300 GB RAID-10 固态硬盘	6 TB @ 1 Gbps	2个免费IP	55.99 美元/月	<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=25">现在下单</a></p>
+<p>为什么选择 RackNerd？<br>
+高性能： 我们采用纯 SSD 存储和先进的 RAID-10 技术，确保您获得出色的性能和速度。<br>
+灵活配置： 多种内存和存储选项，以满足不同业务需求。<br>
+即时配置： 您的虚拟专用服务器将在购买后立即设置，无需等待。<br>
+全球部署： 我们覆盖多个地理位置，以提供更好的网络连通性和地域选择。<br>
+专业支持： 我们的客户支持团队随时准备回答您的问题和提供帮助。<br>
+无论您是个人用户还是企业，RackNerd 的 KVM VPS 解决方案都将为您提供稳定、高性能的虚拟服务器环境。立即选择我们，开启您的虚拟化之旅！</p>
+<p>立即浏览全部计划</p>
+<p>联系我们<br>
+如果您有任何问题或需要进一步咨询，请随时联系我们的客户支持团队。</p>
+<p>电子邮箱：support@racknerd.com<br>
+电话：+1 (888) 881-NERD<br>
+不要错过这个机会！选择 RackNerd，为您的业务提供高性能、稳定的 KVM VPS 解决方案！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[经销商虚拟主机：轻松创业，无需技术经验！]]></title>
+        <id>https://lcqingtian.github.io/post/jing-xiao-shang-xu-ni-zhu-ji-qing-song-chuang-ye-wu-xu-ji-zhu-jing-yan/</id>
+        <link href="https://lcqingtian.github.io/post/jing-xiao-shang-xu-ni-zhu-ji-qing-song-chuang-ye-wu-xu-ji-zhu-jing-yan/">
+        </link>
+        <updated>2023-08-11T04:32:46.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎来到 RackNerd 经销商托管计划，您的网络托管业务启程之地。如果您正在寻求能够灵活创建和管理多个托管帐户的解决方案，或者希望为您的企业推出新的网络产品，那么您来对地方了！我们为您提供了简单而强大的经销商托管计划，让您无需拥有技术经验，即可轻松开始。</p>
+<p>为什么选择 RackNerd？<br>
+RackNerd 服务器为您提供完全白标主机名和名称服务器，让您可以将业务品牌与我们的高性能托管服务完美结合。不必担心技术细节，因为我们的专业系统管理员会全程管理和维护您的服务器，让您专注于业务增长。立即与 RackNerd 合作，利用我们丰富的专业知识，将您的虚拟主机业务推向更高峰！</p>
+<p>我们的经销商托管计划特点<br>
+经销商 - 40 GB<br>
+磁盘空间： 40 GB SSD<br>
+每月传输： 2 TB<br>
+cPanel 帐户： 最多 20 个<br>
+SSL 证书： 免费提供<br>
+操作系统支持： CloudLinux<br>
+脚本安装程序： Softaculous<br>
+网络服务器： LiteSpeed<br>
+每日备份： 免费提供 (JetBackup)<br>
+迁移服务： 免费<br>
+控制面板： cPanel 和 WHM<br>
+客户端管理： 免费 Clientexec 许可证<br>
+价格： 14.59 美元/月<br>
+<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=659">立即下单</a></p>
+<p>经销商 - 100 GB<br>
+磁盘空间： 100 GB SSD<br>
+每月传输： 无限<br>
+cPanel 帐户： 最多 40 个<br>
+SSL 证书： 免费提供<br>
+操作系统支持： CloudLinux<br>
+脚本安装程序： Softaculous<br>
+网络服务器： LiteSpeed<br>
+每日备份： 免费提供 (JetBackup)<br>
+迁移服务： 免费<br>
+控制面板： cPanel 和 WHM<br>
+客户端管理： 免费 Clientexec 许可证<br>
+价格： 22.59 美元/月<br>
+<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=660">立即下单</a></p>
+<p>经销商 - 200 GB<br>
+磁盘空间： 200 GB SSD<br>
+每月传输： 无限<br>
+cPanel 帐户： 最多 60 个<br>
+SSL 证书： 免费提供<br>
+操作系统支持： CloudLinux<br>
+脚本安装程序： Softaculous<br>
+网络服务器： LiteSpeed<br>
+每日备份： 免费提供 (JetBackup)<br>
+迁移服务： 免费<br>
+控制面板： cPanel 和 WHM<br>
+客户端管理： 免费 Clientexec 许可证<br>
+价格： 36.59 美元/月<br>
+<a href="https://my.racknerd.com/aff.php?aff=8842&amp;pid=661">立即下单</a><br>
+下单与联系<br>
+我们的经销商托管计划适用于美国、欧盟和亚洲地区。无论您是创业者、企业家还是想要扩展现有业务，RackNerd 都能为您提供最佳的解决方案。立即下单，开启您的虚拟主机创业之旅吧！</p>
+<p>我们的首页<br>
+<a href="https://my.racknerd.com/aff.php?aff=8842">首页</a></p>
+<p>联系我们<br>
+如有任何问题或疑虑，请随时联系我们的客户支持团队。我们期待为您提供帮助并成为您的虚拟主机业务的合作伙伴！</p>
+<p>电子邮箱：support@racknerd.com<br>
+电话：+1 (888) 881-NERD</p>
+<p>不要再犹豫了！选择 RackNerd，让您的虚拟主机业务腾飞起航！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://lcqingtian.github.io/post/hello-gridea/</id>
+        <link href="https://lcqingtian.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
