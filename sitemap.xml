@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/03/14/Redis/Redis%E9%94%81/</loc>
+    <loc>http://example.com/2024/03/12/Redis/Redis%E9%94%81/</loc>
     
     <lastmod>2024-03-14</lastmod>
     
@@ -75,6 +75,13 @@
   
   <url>
     <loc>http://example.com/categories/%E8%BD%AF%E8%80%83/</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/Redis/</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
