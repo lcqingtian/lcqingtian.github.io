@@ -71,14 +71,6 @@
       </categories>
   </entry>
   <entry>
-    <title>软考数据库</title>
-    <url>/2024/03/12/ruankao/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>软考</category>
-      </categories>
-  </entry>
-  <entry>
     <title>案例分析</title>
     <url>/2024/03/12/ruankao/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<h2 id="必背知识点"><a href="#必背知识点" class="headerlink" title="必背知识点"></a>必背知识点</h2><h3 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h3><p>质量属性<br>性能，可靠性，可用性，安全性，可修改性，互操作性，功能性，可变性</p>
@@ -114,7 +106,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/18/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
+    <url>/2024/03/19/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h1 id="RedisTemplate、Jedis、Lettuce、Redisson对比"><a href="#RedisTemplate、Jedis、Lettuce、Redisson对比" class="headerlink" title="RedisTemplate、Jedis、Lettuce、Redisson对比"></a>RedisTemplate、Jedis、Lettuce、Redisson对比</h1><p>以下是对以上Redis客户端库的对比分析。</p>
 <h2 id="RedisTemplate"><a href="#RedisTemplate" class="headerlink" title="RedisTemplate"></a>RedisTemplate</h2><p>来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问题，此外提供了对Redis Pub&#x2F;Sub模型的抽象。但是需要注意的是，它需要Spring环境的支撑存在。</p>
 <h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><p>Jedis是Redis的Java实现的客户端，其API提供了比较全面的Redis命令的支持。Jedis用法简便，支持排序、连接池、管道等操作。另外，使用Jedis开发者需要提前了解redis所有命令和参数，才能开发出一个完善的系统，因此上手难度会比较大。</p>
@@ -180,9 +172,9 @@
       </categories>
   </entry>
   <entry>
-    <title>嵌入式相关</title>
-    <url>/2024/03/12/ruankao/%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<p>负载均衡：</p>
+    <title>2022案例分析</title>
+    <url>/2024/03/12/ruankao/2022%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<p>【说明】<br>某电子商务公司拟升级其会员与促销管理系统，向用户提供个性化服务，提高用户的粘性。在项目立项之初，公司领导层一致认为本次升级的主要目标是提升会员管理方式的灵活性，由于当前用户规模不大，业务也相对简单，系统性能方面不做过多考虑。新系统除了保持现有的四级固定会员制度外，还需要根据用户的消费金额、偏好、重复性等相关特征动态调整商品的折扣力度，并支持在特定的活动周期内主动筛选与活动主题高度相关的用户集合，提供个性化的打折促销活动。<br>在需求分析与架构设计阶段，公司提出的需求和质量属性描述如下:<br>(a)管理员能够在页面上灵活设置折扣力度规则和促销活动逻辑，设置后即可生效;(互操作性)<br>(b)系统应该具备完整的安全防护措施，支持对恶意攻击行为进行检测与报警;（安全性）<br>(c)在正常负载情况下，系统应在0.3秒内对用户的界面操作请求进行响应;（性能）<br>(d)用户名是系统唯一标识，要求以字母开头，由数字和字母组合而成，长度不少于6个字符:（功能性）<br>(e)在正常负载情况下，用户支付商品费用后在3秒内确认订单支付信息;（性能）<br>(f)系统主站点电力中断后，应在5秒内将请求重定向到备用站点;（可用性）<br>(g)系统支持横向存储扩展，要求在2人天内完成所有的扩展与测试工作;（可修改性）第一次判断为（可测试性）判断错误<br>(h)系统宕机后，需要在10秒内感知错误，并自动启动热备份系统;（可用性）<br>(i)系统需要内置接口函数，支持开发团队进行功能调试与系统诊断;（可测试性）<br>(j)系统需要为所有的用户操作行为进行详细记录，便于后期查阅与审计;（安全性）<br>(k)支持对系统的外观进行调整和配置，调整工作需要在4人天内完成。（可修改性）在对系统需求、质量属性描述和架构特性进行分析的基础上，系统架构师给出了两种候选的架构设计方案，公司目前正在组织相关专家对系统架构进行评估。<br>1安全性 2可修改性 3e 4j 5h 6 k<br>补充知识：质量属性有那些：性能，可靠性，可用性，安全性，可修改性，功能性，可变性（体系结构扩充变更），互操作性<br>问题2<br>使用解释器风格<br>折扣规则可改性 解释器风格可以灵活配置新的规则，只需要导入配置或者新增解释规则就行，可以灵活的修改，面相对象则需要修改具体的类，具体的方法。<br>灵活性     解释器风格可以灵活的设计规则计算表达式，灵活性较好，面相对象需要使用策略模式具体实现对应的类和方法，灵活性较差。<br>性能 面向对象使用预先编译的方式，解释器需要动态解析绑定，性能方面略优，但是本系统对性能的要求不是特别高，综合考虑使用解释器风格更好。</p>
 ]]></content>
       <categories>
         <category>软考</category>
@@ -212,7 +204,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/18/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
+    <url>/2024/03/19/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
     <content><![CDATA[<p>AWS亚马逊云账号注册 全球云服务器12个月免费试用详细教程</p>
 ]]></content>
   </entry>
