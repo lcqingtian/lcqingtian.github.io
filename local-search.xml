@@ -129,7 +129,7 @@
     <link href="/2024/03/12/linux/linux%E5%91%BD%E4%BB%A4/"/>
     <url>/2024/03/12/linux/linux%E5%91%BD%E4%BB%A4/</url>
     
-    <content type="html"><![CDATA[<p>##文件复制移动<br>A目录到B目录复制所有文件<br>mv &#x2F;path&#x2F;a&#x2F;* .<br>需要覆盖文件 mv -f </p>]]></content>
+    <content type="html"><![CDATA[<p>##文件复制移动<br>A目录到B目录复制所有文件<br>mv &#x2F;path&#x2F;a&#x2F;* .<br>需要覆盖文件 mv -f<br>##权限<br>赋予当前文件夹下所有sh文件可执行权限  </p><p>chmod +x *.sh</p>]]></content>
     
     
     <categories>
