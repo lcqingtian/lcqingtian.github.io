@@ -99,7 +99,7 @@
 </li>
 </ol>
 <p>综上所述，三种模式主要的区别在于如何分配服务负载以及如何处理服务器故障。各种模式都有各自的优点和局限，选择哪种模式主要取决于应用的具体需求和环境。</p>
-<h2 id="软件系统设计与建模"><a href="#软件系统设计与建模" class="headerlink" title="软件系统设计与建模"></a>软件系统设计与建模</h2><h3 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h3><p>数据流图在分层细化结构中遵循的数据平衡原则：<br>层间平衡：数据流个数一致，方向一致<br>图内平衡 : 对于数据流图的任意一个加工 , 既有输入 , 又有输出 ;</p>
+<h2 id="软件系统设计与建模"><a href="#软件系统设计与建模" class="headerlink" title="软件系统设计与建模"></a>软件系统设计与建模</h2><h3 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h3><p>数据流图在分层细化结构中遵循的数据平衡原则：<br>层间平衡：数据流个数一致，方向一致<br>图内平衡 : 对于数据流图的任意一个加工 , 既有输入 , 又有输出 ;<br>问题2<br>分析阶段：<br>数据流<br>数据字典<br>设计阶段：<br>数据流<br>数据字典</p>
 ]]></content>
       <categories>
         <category>软考</category>
@@ -170,6 +170,15 @@
 ]]></content>
       <categories>
         <category>Redis</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>常用Linux命令</title>
+    <url>/2024/03/12/linux/linux%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>##文件复制移动<br>A目录到B目录复制所有文件<br>mv &#x2F;path&#x2F;a&#x2F;* .<br>需要覆盖文件 mv -f </p>
+]]></content>
+      <categories>
+        <category>linux命令</category>
       </categories>
   </entry>
   <entry>
