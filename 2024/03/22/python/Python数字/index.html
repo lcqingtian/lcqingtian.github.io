@@ -16,23 +16,27 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="##Redis实现限流和分布式锁首先添加jar包 12345&lt;dependency&gt;		&lt;groupId&gt;org.redisson&lt;&#x2F;groupId&gt;		&lt;artifactId&gt;redisson&lt;&#x2F;artifactId&gt;		&lt;version&gt;3.24.3&lt;&#x2F;version&gt;	&lt;&#x2F;dependency&gt;">
+    <meta name="description" content="在 Python 中，数字类型是一种基本的数据类型，包括整数（int）、浮点数（float）和复数（complex）。当您为数字类型变量赋值时，便会创建相应的数值对象。以下是对数字类型及其操作的简要概述： 整数（int）整数是不带小数部分的正数或负数，长度没有限制。可以使用内置函数type()来验证整数类型。 1234567x &#x3D; 1y &#x3D; 35656222554887711z &#x3D; -325552">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Redis实现限流和分布式锁">
-<meta property="og:url" content="http://example.com/2024/03/12/Redis/Redis%E9%94%81/index.html">
+<meta property="og:title" content="Python 数字表示">
+<meta property="og:url" content="http://example.com/2024/03/22/python/Python%E6%95%B0%E5%AD%97/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##Redis实现限流和分布式锁首先添加jar包 12345&lt;dependency&gt;		&lt;groupId&gt;org.redisson&lt;&#x2F;groupId&gt;		&lt;artifactId&gt;redisson&lt;&#x2F;artifactId&gt;		&lt;version&gt;3.24.3&lt;&#x2F;version&gt;	&lt;&#x2F;dependency&gt;">
+<meta property="og:description" content="在 Python 中，数字类型是一种基本的数据类型，包括整数（int）、浮点数（float）和复数（complex）。当您为数字类型变量赋值时，便会创建相应的数值对象。以下是对数字类型及其操作的简要概述： 整数（int）整数是不带小数部分的正数或负数，长度没有限制。可以使用内置函数type()来验证整数类型。 1234567x &#x3D; 1y &#x3D; 35656222554887711z &#x3D; -325552">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-11T16:00:00.000Z">
+<meta property="article:published_time" content="2024-03-21T16:00:00.000Z">
 <meta property="article:modified_time" content="2024-03-21T08:43:21.814Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="基础教程">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Redis实现限流和分布式锁 - Hexo</title>
+  <title>Python 数字表示 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -223,7 +227,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Redis实现限流和分布式锁"></span>
+            <span id="subtitle" data-typed-text="Python 数字表示"></span>
           
         </div>
 
@@ -234,8 +238,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-12 00:00" pubdate>
-          March 12, 2024 am
+        <time datetime="2024-03-22 00:00" pubdate>
+          March 22, 2024 am
         </time>
       </span>
     
@@ -246,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k words
+          499 words
         
       </span>
     
@@ -257,7 +261,7 @@
         
         
         
-          12 mins
+          5 mins
         
       </span>
     
@@ -294,35 +298,28 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Redis实现限流和分布式锁</h1>
+            <h1 id="seo-header">Python 数字表示</h1>
             
             
               <div class="markdown-body">
                 
-                <p>##Redis实现限流和分布式锁<br>首先添加jar包</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">&lt;dependency&gt;<br>		&lt;groupId&gt;org.redisson&lt;/groupId&gt;<br>		&lt;artifactId&gt;redisson&lt;/artifactId&gt;<br>		&lt;version&gt;3.24.3&lt;/version&gt;<br>	&lt;/dependency&gt;<br></code></pre></td></tr></table></figure>
-<p>如果缺少类请查看这个地址<br><a target="_blank" rel="noopener" href="https://mvnrepository.com/artifact/org.redisson/redisson/3.24.3">https://mvnrepository.com/artifact/org.redisson/redisson/3.24.3</a><br>他会显示这个包所相关的jar包和版本号<br>然后就是配置redisson  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs bash">package com.rfca.config;<br><br>import org.redisson.Redisson;<br>import org.redisson.config.Config;<br>import org.springframework.context.annotation.Bean;<br>import org.springframework.stereotype.Component;<br><br>@Component<br>public class RedisConfig &#123;<br>    // 1. Create config object<br>    @Bean<br>    public Redisson <span class="hljs-function"><span class="hljs-title">redisson</span></span>() &#123;<br><br>        Config config = new Config();<br><br>        config.useSingleServer()<br>                .setAddress(<span class="hljs-string">&quot;redis://127.0.0.1:6379&quot;</span>)<br>                .setPassword(<span class="hljs-string">&quot;12345&quot;</span>); // 替换为你的 Redis 密码<br>        <span class="hljs-built_in">return</span> (Redisson) Redisson.create(config);<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
-<p>当我们实现高并发的时候，还需要考虑限流<br>这是我的一个实现类</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><code class="hljs bash">package com.rfca.config;<br><br>import org.springframework.beans.factory.annotation.Autowired;<br>import org.springframework.stereotype.Component;<br>import redis.clients.jedis.ShardedJedis;<br>import redis.clients.jedis.ShardedJedisPool;<br><br>@Component<br>public class RateLimiter &#123;<br>    @Autowired<br>    private ShardedJedisPool shardedJedisPool;<br><br>    public boolean isAllowed(String key, int <span class="hljs-built_in">limit</span>, int windowSizeInSeconds) &#123;<br>        try (ShardedJedis jedis = shardedJedisPool.getResource()) &#123;<br>            String redisKey = String.format(<span class="hljs-string">&quot;rate_limiter:%s&quot;</span>, key);<br><br>            // 获取当前时间戳<br>            long timestamp = System.currentTimeMillis() / 1000;<br><br>            // 获取窗口起始时间<br>            long windowStart = timestamp - windowSizeInSeconds;<br><br>            // 统计窗口内的请求数量<br>            long count = jedis.zcount(redisKey, windowStart, timestamp);<br><br>            // 判断是否允许请求<br>            <span class="hljs-built_in">return</span> count &lt; <span class="hljs-built_in">limit</span>;<br>        &#125; catch (Exception e) &#123;<br>            e.printStackTrace();<br>            <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;<br>        &#125;<br>    &#125;<br><br>&#125;<br><br><br></code></pre></td></tr></table></figure>
-<p>编写测试代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><code class="hljs bash">@GetMapping(<span class="hljs-string">&quot;/limited-resource&quot;</span>)<br>    public ResponseEntity&lt;String&gt; accessLimitedResource(HttpServletRequest request) &#123;<br>        String key = <span class="hljs-string">&quot;resourceAccessKey&quot;</span>; // 用于标识资源的键<br>        int <span class="hljs-built_in">limit</span> = 10000; // 限制次数<br>        int windowSizeInSeconds = 60; // 时间窗口，例如1分钟<br><br>        boolean isAllowed = rateLimiter.isAllowed(key, <span class="hljs-built_in">limit</span>, windowSizeInSeconds);<br>        <span class="hljs-keyword">if</span> (isAllowed) &#123;<br>            // 获取缓存<br>            String keyparam = request.getParameter(<span class="hljs-string">&quot;30610002&quot;</span>);<br>            RBucket&lt;Integer&gt; bucket = redisson.getBucket(keyparam); // 获取 RBucket 对象<br>            String lock = <span class="hljs-string">&quot;mylock&quot;</span>; // 此处使用全局锁，可以针对不同资源进行加锁，减少锁的粒度<br>            RLock lock1 = redisson.getLock(lock);<br>            Integer nums1 = bucket.get();<br>            <span class="hljs-keyword">if</span> (nums1 == 0) &#123;<br>                log.info(<span class="hljs-string">&quot;库存不足&quot;</span>);<br>                <span class="hljs-built_in">return</span> ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).body(<span class="hljs-string">&quot;库存不足&quot;</span>);<br>            &#125;<br>            lock1.lock();//阻塞式等待，默认加的锁都是30s时间<br>            try &#123;<br>                log.info(<span class="hljs-string">&quot;加锁成功，执行业务...&quot;</span> + Thread.currentThread().getId()); // 打印获取到锁的线程ID<br>                Integer nums = bucket.get();<br>                <span class="hljs-keyword">if</span> (nums != null &amp;&amp; nums &gt; 0) &#123;<br>                    String parkingLotId = request.getParameter(<span class="hljs-string">&quot;30610002&quot;</span>);<br>                    SelectByparkinglotidResult selectByparkinglotidResult = monthlyCardRulesMapper.selectByparkinglotid(parkingLotId).get(0);<br>                    MonthlyCardRules monthlyCardRules = new MonthlyCardRules();<br>                    monthlyCardRules.setId(selectByparkinglotidResult.getId());<br>                    monthlyCardRules.setNums(nums - 1);<br>                    monthlyCardRulesMapper.updateByPrimaryKeySelective(monthlyCardRules);<br>                    log.info(<span class="hljs-string">&quot;更新成功&quot;</span>);<br>                    bucket.set(nums - 1);<br>                    <span class="hljs-built_in">return</span> ResponseEntity.ok(<span class="hljs-string">&quot;请求成功&quot;</span>);<br>                &#125; <span class="hljs-keyword">else</span> &#123;<br>                    log.info(<span class="hljs-string">&quot;库存不足&quot;</span>);<br>                    <span class="hljs-built_in">return</span> ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).body(<span class="hljs-string">&quot;库存不足&quot;</span>);<br>                &#125;<br>            &#125; catch (Exception e) &#123;<br>                log.info(<span class="hljs-string">&quot;获取锁失败&quot;</span>);<br>                <span class="hljs-built_in">return</span> ResponseEntity.ok(<span class="hljs-string">&quot;没有抢到&quot;</span>);<br>            &#125; finally &#123;<br>                <span class="hljs-keyword">if</span> (lock1.isHeldByCurrentThread()) &#123;<br>                    log.info(<span class="hljs-string">&quot;释放锁...&quot;</span> + Thread.currentThread().getId());<br>                    lock1.unlock();<br>                &#125;<br>            &#125;<br><br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-built_in">return</span> ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).body(<span class="hljs-string">&quot;请求过多，请稍后再试&quot;</span>);<br>        &#125;<br>    &#125;<br><br></code></pre></td></tr></table></figure>
-<p>安装工具压测<br>要在计算机上安装 JMeter，请按照以下步骤进行操作：</p>
-<p>下载 JMeter：</p>
-<p>前往 Apache JMeter 的官方网站：<a target="_blank" rel="noopener" href="https://jmeter.apache.org/">https://jmeter.apache.org/</a><br>导航至 Downloads 页面。<br>选择最新版本的 Apache JMeter，通常可以在页面顶部找到。确保选择与你的操作系统兼容的版本。<br>解压下载的文件：</p>
-<p>下载完成后，解压缩下载的压缩文件。你可以使用文件压缩软件（如 WinRAR、7-Zip）进行解压缩。<br>解压后会得到一个文件夹，里面包含 JMeter 的可执行文件和其他必要文件。<br>启动 JMeter：</p>
-<p>进入解压后的文件夹，在其中找到 JMeter 的可执行文件，它的名称可能是 jmeter.bat（Windows）或 jmeter.sh（Unix&#x2F;Linux）。<br>双击运行 jmeter.bat 或 jmeter.sh 文件，即可启动 JMeter。<br>验证安装：</p>
-<p>当 JMeter 启动后，你会看到 JMeter 的 GUI（图形用户界面）。<br>如果 GUI 成功启动，表示 JMeter 已经成功安装并可以正常运行。<br>可选步骤 - 配置环境变量（仅限 Unix&#x2F;Linux）：</p>
-<p>如果你在 Unix&#x2F;Linux 系统上使用 JMeter，你可能希望将 JMeter 添加到系统路径中，以便从任何位置运行 JMeter。<br>若要配置环境变量，请编辑 ~&#x2F;.bashrc 文件，并添加以下行：<br>ruby<br>Copy code<br>export PATH&#x3D;$PATH:&#x2F;path&#x2F;to&#x2F;jmeter&#x2F;bin<br>其中 &#x2F;path&#x2F;to&#x2F;jmeter 是你解压 JMeter 的文件夹的路径。<br>开始使用 JMeter：</p>
-<p>启动 JMeter 后，你可以开始创建并运行测试计划，执行性能测试、接口测试等操作。你可以在 JMeter 的 GUI 中创建和管理测试计划，并使用不同的组件来模拟各种场景。<br>通过以上步骤，你应该可以成功下载、安装并启动 JMeter，并开始使用它进行性能测试和接口测试等任务。  </p>
-<p>当使用 JMeter 创建并发请求时，你需要按照以下步骤操作：</p>
-<p>启动 JMeter： 运行 JMeter，等待它完全加载。</p>
-<p>创建测试计划： 在 JMeter 左侧的 Test Plan (测试计划) 上右键，选择 “Add” -&gt; “Threads (Users)” -&gt; “Thread Group”。这将添加一个线程组，你可以在其中定义并发用户的数量和其他配置。</p>
-<p>添加 HTTP 请求： 在刚创建的线程组上右键，选择 “Add” -&gt; “Sampler” -&gt; “HTTP Request”。在 HTTP 请求的配置中，填入你的接口 URL：<a target="_blank" rel="noopener" href="http://localhost:8088/stpweb/limited-resource.do?30610002=30610002%E3%80%82">http://localhost:8088/stpweb/limited-resource.do?30610002=30610002。</a></p>
-<p>配置并发用户数： 在刚创建的线程组下，你可以设置并发用户的数量。可以在 “Number of Threads (users)” 字段中指定要模拟的并发用户数。</p>
-<p>运行测试： 点击 JMeter 工具栏上的绿色运行按钮来启动测试。JMeter 将发送指定数量的并发请求到你的接口地址。</p>
-<p>查看结果： 在测试执行完成后，你可以查看结果。可以使用 JMeter 提供的各种监听器（Listeners）来查看请求响应时间、吞吐量、错误率等性能指标。</p>
-<p>以上是基本的步骤，你可以根据你的测试需求进一步调整配置，例如设置请求参数、添加断言、配置定时器等。JMeter 提供了丰富的功能和组件来满足不同场景下的测试需求，你可以根据具体情况进行使用。</p>
+                <p>在 Python 中，数字类型是一种基本的数据类型，包括整数（int）、浮点数（float）和复数（complex）。当您为数字类型变量赋值时，便会创建相应的数值对象。以下是对数字类型及其操作的简要概述：</p>
+<h3 id="整数（int）"><a href="#整数（int）" class="headerlink" title="整数（int）"></a>整数（int）</h3><p>整数是不带小数部分的正数或负数，长度没有限制。可以使用内置函数<code>type()</code>来验证整数类型。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python">x = <span class="hljs-number">1</span><br>y = <span class="hljs-number">35656222554887711</span><br>z = -<span class="hljs-number">3255522</span><br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(x))  <span class="hljs-comment"># &lt;class &#x27;int&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(y))  <span class="hljs-comment"># &lt;class &#x27;int&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(z))  <span class="hljs-comment"># &lt;class &#x27;int&#x27;&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="浮点数（float）"><a href="#浮点数（float）" class="headerlink" title="浮点数（float）"></a>浮点数（float）</h3><p>浮点数带有一位或多位小数，可以是正数或负数。也可以使用科学计数法表示浮点数。同样可以使用<code>type()</code>来验证浮点数类型。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python">x = <span class="hljs-number">1.10</span><br>y = <span class="hljs-number">1.0</span><br>z = -<span class="hljs-number">35.59</span><br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(x))  <span class="hljs-comment"># &lt;class &#x27;float&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(y))  <span class="hljs-comment"># &lt;class &#x27;float&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(z))  <span class="hljs-comment"># &lt;class &#x27;float&#x27;&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="复数（complex）"><a href="#复数（complex）" class="headerlink" title="复数（complex）"></a>复数（complex）</h3><p>复数用<code>j</code>表示虚部，例如<code>3+5j</code>。同样可以使用<code>type()</code>来验证复数类型。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python">x = <span class="hljs-number">3</span>+<span class="hljs-number">5j</span><br>y = <span class="hljs-number">5j</span><br>z = -<span class="hljs-number">5j</span><br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(x))  <span class="hljs-comment"># &lt;class &#x27;complex&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(y))  <span class="hljs-comment"># &lt;class &#x27;complex&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(z))  <span class="hljs-comment"># &lt;class &#x27;complex&#x27;&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><p>您可以使用内置函数<code>int()</code>、<code>float()</code>和<code>complex()</code>对各种数值类型进行转换。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python">x = <span class="hljs-number">1</span>    <span class="hljs-comment"># int</span><br>y = <span class="hljs-number">2.8</span>  <span class="hljs-comment"># float</span><br>z = <span class="hljs-number">1j</span>   <span class="hljs-comment"># complex</span><br><br>a = <span class="hljs-built_in">float</span>(x)   <span class="hljs-comment"># int 转换为 float</span><br>b = <span class="hljs-built_in">int</span>(y)     <span class="hljs-comment"># float 转换为 int</span><br>c = <span class="hljs-built_in">complex</span>(x) <span class="hljs-comment"># int 转换为 complex</span><br><br><span class="hljs-built_in">print</span>(a)  <span class="hljs-comment"># 1.0</span><br>```python<br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(a))  <span class="hljs-comment"># &lt;class &#x27;float&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(b))  <span class="hljs-comment"># &lt;class &#x27;int&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(c))  <span class="hljs-comment"># &lt;class &#x27;complex&#x27;&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h3><p>Python 的内置模块 <code>random</code> 可用于生成随机数。您可以使用 <code>randrange()</code> 函数来生成指定范围内的随机整数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> random<br><br><span class="hljs-built_in">print</span>(random.randrange(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>))  <span class="hljs-comment"># 生成 1 到 9 之间的随机整数</span><br></code></pre></td></tr></table></figure>
+
+<p>以上是关于 Python 中数字类型的概览及操作，包括整数、浮点数、复数以及类型转换和生成随机数的说明。深入理解和灵活运用这些数据类型将有助于编写更加高效和功能丰富的Python程序。</p>
 
                 
               </div>
@@ -341,7 +338,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Redis/" class="category-chain-item">Redis</a>
+  <a href="/categories/Python/" class="category-chain-item">Python</a>
   
   
 
@@ -353,6 +350,19 @@
     </div>
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Python/" class="print-no-link">#Python</a>
+      
+        <a href="/tags/%E6%95%99%E7%A8%8B/" class="print-no-link">#教程</a>
+      
+        <a href="/tags/%E7%BC%96%E7%A8%8B/" class="print-no-link">#编程</a>
+      
+        <a href="/tags/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="print-no-link">#基础教程</a>
+      
+    </div>
+  
 </div>
 
 
@@ -361,8 +371,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Redis实现限流和分布式锁</div>
-      <div>http://example.com/2024/03/12/Redis/Redis锁/</div>
+      <div>Python 数字表示</div>
+      <div>http://example.com/2024/03/22/python/Python数字/</div>
     </div>
     <div class="license-meta">
       
@@ -374,7 +384,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>March 12, 2024</div>
+          <div>March 22, 2024</div>
         </div>
       
       
@@ -406,9 +416,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/03/12/ruankao/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/" title="案例分析">
+                      <a href="/2024/03/22/python/Python%E6%8C%87%E5%AE%9A%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/" title="Python指定变量类型">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">案例分析</span>
+                        <span class="hidden-mobile">Python指定变量类型</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -416,8 +426,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/12/linux/linux%E5%91%BD%E4%BB%A4/" title="常用Linux命令">
-                        <span class="hidden-mobile">常用Linux命令</span>
+                      <a href="/2024/03/22/python/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="Python 数据类型">
+                        <span class="hidden-mobile">Python 数据类型</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
