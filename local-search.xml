@@ -5,8 +5,8 @@
   
   <entry>
     <title>5、深入了解Python变量：定义、赋值、全局变量和多重赋值</title>
-    <link href="/2024/03/23/python/Python%E5%8F%98%E9%87%8F/"/>
-    <url>/2024/03/23/python/Python%E5%8F%98%E9%87%8F/</url>
+    <link href="/2024/03/23/python/03_Python%E5%8F%98%E9%87%8F/"/>
+    <url>/2024/03/23/python/03_Python%E5%8F%98%E9%87%8F/</url>
     
     <content type="html"><![CDATA[<p>深入了解Python变量：定义、赋值、全局变量和多重赋值</p><p>在Python编程中，变量是一种重要的概念，用于存储和操作数据。本教程将继续介绍Python中变量的更多内容，包括多重赋值和全局变量的概念。</p><h3 id="变量的定义和赋值"><a href="#变量的定义和赋值" class="headerlink" title="变量的定义和赋值"></a>变量的定义和赋值</h3><p>在Python中，可以使用等号（<code>=</code>）将值赋给变量。如下所示：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">x = <span class="hljs-number">5</span>          <span class="hljs-comment"># 将整数值5赋给变量x</span><br>name = <span class="hljs-string">&quot;Alice&quot;</span> <span class="hljs-comment"># 将字符串&quot;Alice&quot;赋给变量name</span><br></code></pre></td></tr></table></figure><h3 id="多重赋值"><a href="#多重赋值" class="headerlink" title="多重赋值"></a>多重赋值</h3><p>Python允许同时为多个变量赋值，即多重赋值。例如：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">x, y, z = <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>   <span class="hljs-comment"># 同时给x, y, z赋值</span><br>a = b = c = <span class="hljs-number">0</span>       <span class="hljs-comment"># 将0赋给a, b, c</span><br></code></pre></td></tr></table></figure><h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><p>在Python中，全局变量指的是在程序任何地方均可使用的变量。如果在函数内部想要修改全局变量的值，需要使用<code>global</code>关键字声明全局变量。示例：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">global_var = <span class="hljs-string">&quot;I am a global variable&quot;</span><br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">modify_global_var</span>():<br>    <span class="hljs-keyword">global</span> global_var<br>    global_var = <span class="hljs-string">&quot;Modified global variable inside function&quot;</span><br><br>modify_global_var()<br><span class="hljs-built_in">print</span>(global_var)  <span class="hljs-comment"># 输出&quot;Modified global variable inside function&quot;</span><br></code></pre></td></tr></table></figure><h3 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h3><ul><li>变量名区分大小写，如<code>myVar</code>和<code>MyVar</code>是不同的变量。</li><li>变量名应该具有描述性，清晰表达变量用途。</li><li>遵循命名规则，如驼峰命名法（camelCase）或下划线分隔法（snake_case）。</li></ul>]]></content>
     
@@ -36,19 +36,6 @@
   
   <entry>
     <title></title>
-    <link href="/2024/03/22/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/"/>
-    <url>/2024/03/22/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
-    
-    <content type="html"><![CDATA[<p>AWS亚马逊云账号注册 全球云服务器12个月免费试用详细教程</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
     <link href="/2024/03/22/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/"/>
     <url>/2024/03/22/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
     
@@ -61,9 +48,22 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/03/22/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/"/>
+    <url>/2024/03/22/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
+    
+    <content type="html"><![CDATA[<p>AWS亚马逊云账号注册 全球云服务器12个月免费试用详细教程</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2、探索 Python：安装与快速入门</title>
-    <link href="/2024/03/22/python/Python%E5%85%A5%E9%97%A8/"/>
-    <url>/2024/03/22/python/Python%E5%85%A5%E9%97%A8/</url>
+    <link href="/2024/03/22/python/02_Python%E5%85%A5%E9%97%A8/"/>
+    <url>/2024/03/22/python/02_Python%E5%85%A5%E9%97%A8/</url>
     
     <content type="html"><![CDATA[<p>当撰写关于 Python 安装和快速入门的博客时，记得详细列出安装步骤和基础概念，让读者能够快速上手。以下是一个示例博客：</p><hr><p><strong>标题：探索 Python：安装与快速入门</strong></p><p>如果你对编程感兴趣，Python是一个优秀的选择。Python以其易读性和功能丰富的特点而广受欢迎。本文将介绍如何安装Python并快速入门。</p><h3 id="第一步：安装-Python"><a href="#第一步：安装-Python" class="headerlink" title="第一步：安装 Python"></a>第一步：安装 Python</h3><ol><li><p><strong>下载 Python</strong>：</p><ul><li>访问 Python 官方网站（<a href="https://www.python.org/downloads/%EF%BC%89%E3%80%82">https://www.python.org/downloads/）。</a></li><li>在下载页面选择适合你操作系统的版本，并下载最新的 Python 安装程序。</li></ul></li><li><p><strong>安装 Python</strong>：</p><ul><li>运行下载的安装程序。</li><li>在安装向导中选择“Add Python x.x to PATH”（将 Python 添加到环境变量）。</li><li>点击“Install Now”开始安装。</li></ul></li><li><p><strong>验证安装</strong>：</p><ul><li>打开命令提示符（Windows）或终端（Mac&#x2F;Linux）。</li><li>输入命令 <code>python --version</code> 检查Python是否成功安装。</li></ul></li></ol><h3 id="第二步：Python-快速入门"><a href="#第二步：Python-快速入门" class="headerlink" title="第二步：Python 快速入门"></a>第二步：Python 快速入门</h3><ol><li><p><strong>交互式模式</strong>：</p><ul><li>打开命令提示符或终端。</li><li>输入 <code>python</code> 进入 Python 交互式模式。</li><li>尝试输入简单的数学运算或字符串操作，如 <code>2+2</code> 或 <code>&#39;Hello, World!&#39;</code>。</li></ul></li><li><p><strong>编写和执行脚本</strong>：</p><ul><li>打开文本编辑器，如 Notepad++、VS Code等。</li><li>编写简单的 Python 脚本，比如：<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello, World!&quot;</span>)<br></code></pre></td></tr></table></figure></li><li>将脚本保存为 <code>.py</code> 文件，如 <code>hello.py</code>。</li><li>在命令提示符或终端中进入脚本所在</li></ul></li></ol>]]></content>
     
@@ -279,8 +279,8 @@
   
   <entry>
     <title>1、探索 Python：一门兼具力量与易用性的编程语言</title>
-    <link href="/2024/03/21/python/python%E4%BB%8B%E7%BB%8D/"/>
-    <url>/2024/03/21/python/python%E4%BB%8B%E7%BB%8D/</url>
+    <link href="/2024/03/21/python/01_python%E4%BB%8B%E7%BB%8D/"/>
+    <url>/2024/03/21/python/01_python%E4%BB%8B%E7%BB%8D/</url>
     
     <content type="html"><![CDATA[<p><strong>探索 Python：一门兼具力量与易用性的编程语言</strong></p><p>Python是一门多用途的高级编程语言，它以其简洁明了的语法和强大的功能而受到广泛推崇。在本篇博客中，我们将探索Python的定义、应用领域、选择原因以及与其他编程语言的比较。</p><h3 id="1-什么是-Python？"><a href="#1-什么是-Python？" class="headerlink" title="1. 什么是 Python？"></a>1. 什么是 Python？</h3><p>Python是一门高级编程语言，由Guido van Rossum于上世纪90年代创建。Python以其清晰简洁的语法和易学易用的特点而闻名，被称为“最具可读性的编程语言之一”。Python的哲学是“优雅、明了、简单”，这使得Python成为初学者入门编程的绝佳选择。</p><h3 id="2-Python-能做什么？"><a href="#2-Python-能做什么？" class="headerlink" title="2. Python 能做什么？"></a>2. Python 能做什么？</h3><p>Python在各个领域有着广泛的应用。从Web开发、数据科学到人工智能、机器学习，Python都具备强大的工具和库。谷歌、Facebook、Dropbox等知名公司都在使用Python来构建他们的软件。此外，Python还适用于自动化脚本、网络编程、游戏开发等多个领域。</p><h3 id="3-为什么选择-Python？"><a href="#3-为什么选择-Python？" class="headerlink" title="3. 为什么选择 Python？"></a>3. 为什么选择 Python？</h3><p>选择Python的理由有很多。首先，Python的简洁明了的语法使得代码可读性高，易于维护。其次，Python具有庞大的开源社区和丰富的资源库，让开发人员能够快速构建应用。此外，Python跨平台性强， 可以在不同操作系统上运行。综合来看，Python是一个功能丰富、易学易用的编程语言，适合不同层次的开发人员使用。</p><h3 id="4-很高兴知道-Python"><a href="#4-很高兴知道-Python" class="headerlink" title="4. 很高兴知道 Python"></a>4. 很高兴知道 Python</h3><p>Python的语法与其他编程语言相比，有着一些明显的差异。与C&#x2F;C++相比，Python的语法更简洁，变量类型更灵活，内存管理由解释器自动处理。与Java相比，Python更灵活，不需要显示声明变量类型，异常处理更简单，线程管理更方便。与JavaScript相比，Python更强调函数式编程，模块导入更直观，异步编程更简单。</p><p>在实践中，Python的代码通常比其他语言更容易理解和维护，这使得Python成为很多开发者的首选语言之一。</p><p>总的来说，Python以其简洁的语法、强大的功能和广泛的应用领域，吸引了许多开发者的青睐。无论是初学者还是资深开发者，都可以通过Python来实现各种项目。</p><p>通过这篇博客，希望读者能对Python有更加全面的了解，并尝试使用Python来解决各种编程问题和实现创意项目。</p><hr>]]></content>
     
