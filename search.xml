@@ -815,4 +815,91 @@ public class LocalFileUtils &#123;
         <tag>基础教程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>13、深入了解 Python 元祖</title>
+    <url>/2024/03/21/python/13_Python%E5%85%83%E7%A5%96/</url>
+    <content><![CDATA[<p>标题：深入了解 Python 元组：定义，操作和应用</p>
+<p>Python 的数据结构种类繁多，本文将深入探讨其中的一种：元组。我们将研究元组的定义、如何操作元组，以及元组在 Python 编程中的应用。让我们开始吧！</p>
+<p><strong>1. 什么是 Python 元组？</strong></p>
+<p>Python 中的元组是由一系列值组成的不可变序列。这些值可以是任何类型，并且它们都用逗号分隔，通常包含在圆括号中。</p>
+<p>元组的特征是它们是不可变的，就像字符串一样。这意味着您不能改变元组的元素或大小。下面是一个简单的元组示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">fruits = (<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p>在这个示例中，”apple”，”banana” 和 “cherry” 是元组 <code>fruits</code> 的元素。</p>
+<p><strong>2. 如何操作元组？</strong></p>
+<p>因为元组是不可变的，所以我们不能添加或删除元素，也不能修改元素。但是，我们可以对元组进行其他一些操作。</p>
+<p><strong>访问元组元素：</strong><br>元组的索引方式和列表类似，可以使用中括号加索引的方式访问元组中的元素。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(fruits[<span class="hljs-number">0</span>])   <span class="hljs-comment"># 输出：&quot;apple&quot;</span><br><span class="hljs-built_in">print</span>(fruits[-<span class="hljs-number">1</span>])  <span class="hljs-comment"># 输出：&quot;cherry&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>切片元组：</strong><br>我们可以使用切片操作来获取元组的部分元素。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(fruits[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>])  <span class="hljs-comment"># 输出：(&#x27;banana&#x27;, &#x27;cherry&#x27;)</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>合并元组：</strong><br>虽然不能修改元组，但我们可以通过连接操作来创建一个新的元组。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">colors = (<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;green&quot;</span>)<br>fruits_and_colors = fruits + colors<br><span class="hljs-built_in">print</span>(fruits_and_colors)   <span class="hljs-comment"># 输出：(&#x27;apple&#x27;, &#x27;banana&#x27;, &#x27;cherry&#x27;, &#x27;red&#x27;, &#x27;green&#x27;)</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>3. 元组 的应用</strong></p>
+<p>元组常用于处理那些已知并且不会改变的元素序列。例如，我们在处理日期时（年，月，日），就可以使用元组。</p>
+<p>另外一个元组的常见用途是返回函数的多个值。在 Python 中，可以在一个函数中返回元组，这样就可以一次返回多个值。看下面的示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">min_max</span>(<span class="hljs-params">numbers</span>):<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">min</span>(numbers), <span class="hljs-built_in">max</span>(numbers)<br><br>numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">9</span>, <span class="hljs-number">6</span>]<br><span class="hljs-built_in">print</span>(min_max(numbers))  <span class="hljs-comment"># 输出：(2, 9)</span><br></code></pre></td></tr></table></figure>
+<p>在这个例子中，<code>min_max</code> 函数返回了一个元组，包含最小值和最大值。</p>
+<p><strong>总结</strong></p>
+<p>Python 元组是一种简单但非常强大的数据结构，非常适合用于处理不可变的数据序列。虽然元组的功能相对有限，但是 问题的正确使用可以极大地提高代码的可读性和安全性。</p>
+<p>通过理解元组的特性和如何操作元组，你可以更深入地理解 Python 的数据结构，并使用它们来构建更有效的代码。</p>
+<p>希望这篇文章能帮到正在学习 Python 的你，如果你有任何关于元组的问题或不清楚的地方，欢迎留言提问。让我们一起更深入地探索 Python 吧！</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>教程</tag>
+        <tag>编程</tag>
+        <tag>基础教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>14、了解 Python set</title>
+    <url>/2024/03/21/python/14_Pythonset/</url>
+    <content><![CDATA[<p>在 Python 编程中，集合（Set）是一种无序、唯一的数据结构，用于存储不重复的元素。集合在处理需要唯一性的数据时非常有用，本文将深入介绍 Python 集合的定义、操作和应用，帮助您更好地掌握集合这种数据结构。</p>
+<h2 id="什么是-Python-集合？"><a href="#什么是-Python-集合？" class="headerlink" title="什么是 Python 集合？"></a>什么是 Python 集合？</h2><p>在 Python 中，集合是一种无序、不重复的数据结构，使用大括号 <code>&#123;&#125;</code> 来定义。集合中的元素没有顺序，每个元素都是唯一的。下面是一个简单的 Python 集合示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">fruits = &#123;<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>在上面的示例中，<code>fruits</code> 是一个包含三种水果的集合。集合中的元素不重复，如果重复添加相同元素，集合会自动去除重复元素。</p>
+<h2 id="集合操作"><a href="#集合操作" class="headerlink" title="集合操作"></a>集合操作</h2><h3 id="添加元素"><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h3><p>您可以使用 <code>add()</code> 方法向集合中添加新元素：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">fruits.add(<span class="hljs-string">&quot;orange&quot;</span>)<br><span class="hljs-built_in">print</span>(fruits)  <span class="hljs-comment"># 输出：&#123;&#x27;apple&#x27;, &#x27;banana&#x27;, &#x27;cherry&#x27;, &#x27;orange&#x27;&#125;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h3><p>使用 <code>remove()</code> 或 <code>discard()</code> 方法可以删除集合中的特定元素：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">fruits.remove(<span class="hljs-string">&quot;banana&quot;</span>)<br><span class="hljs-built_in">print</span>(fruits)  <span class="hljs-comment"># 输出：&#123;&#x27;apple&#x27;, &#x27;cherry&#x27;&#125;</span><br><br>fruits.discard(<span class="hljs-string">&quot;peach&quot;</span>)  <span class="hljs-comment"># 如果元素不存在，discard() 不会引发错误</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="集合运算"><a href="#集合运算" class="headerlink" title="集合运算"></a>集合运算</h3><p>Python 的集合支持各种集合运算，如并集、交集、差集等：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">s1 = &#123;<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>&#125;<br>s2 = &#123;<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>&#125;<br><br>union_set = s1 | s2  <span class="hljs-comment"># 并集</span><br>intersection_set = s1 &amp; s2  <span class="hljs-comment"># 交集</span><br>difference_set = s1 - s2  <span class="hljs-comment"># 差集</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="集合方法"><a href="#集合方法" class="headerlink" title="集合方法"></a>集合方法</h3><p>Python 的集合还提供了许多有用的方法来操作集合：</p>
+<ul>
+<li><code>union()</code>：返回两个集合的并集。</li>
+<li><code>intersection()</code>：返回两个集合的交集。</li>
+<li><code>difference()</code>：返回两个集合的差集。</li>
+<li><code>symmetric_difference()</code>：返回两个集合的对称差集（只在一个集合中出现的元素）。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">s1 = &#123;<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>&#125;<br>s2 = &#123;<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>&#125;<br><br><span class="hljs-built_in">print</span>(s1.union(s2))  <span class="hljs-comment"># 输出：&#123;1, 2, 3, 4, 5&#125;</span><br><span class="hljs-built_in">print</span>(s1.intersection(s2))  <span class="hljs-comment"># 输出：&#123;3&#125;</span><br><span class="hljs-built_in">print</span>(s1.difference(s2))  <span class="hljs-comment"># 输出：&#123;1, 2&#125;</span><br><span class="hljs-built_in">print</span>(s1.symmetric_difference(s2))  <span class="hljs-comment"># 输出：&#123;1, 2, 4, 5&#125;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="集合应用"><a href="#集合应用" class="headerlink" title="集合应用"></a>集合应用</h2><p>集合在 Python 编程中广泛应用，特别适合于以下情况：</p>
+<ul>
+<li>去重：通过集合可以轻松去除列表或其他数据结构中的重复元素。</li>
+<li>集合运算：可以方便地进行集合的并集、交集、差集等运算。</li>
+<li>成员关系测试：使用集合可以高效地测试元素是否存在于集合中。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 去重示例</span><br>numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]<br>unique_numbers = <span class="hljs-built_in">set</span>(numbers)<br><span class="hljs-built_in">print</span>(unique_numbers)  <span class="hljs-comment"># 输出：&#123;1, 2, 3, 4&#125;</span><br></code></pre></td></tr></table></figure>
+
+<p>通过深入了解 Python 集合的定义、操作和应用，您可以更有效地利用集合来处理数据，并编写更简洁、高效的代码。希望本文对您加深对 Python 集合的理解有所帮助。如有任何疑问或需要进一步了解，欢迎留言交流。祝学习愉快！</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>教程</tag>
+        <tag>编程</tag>
+        <tag>基础教程</tag>
+      </tags>
+  </entry>
 </search>
