@@ -902,4 +902,49 @@ public class LocalFileUtils &#123;
         <tag>基础教程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>14、 Python 字典</title>
+    <url>/2024/03/21/python/15_Python%E5%AD%97%E5%85%B8/</url>
+    <content><![CDATA[<p>在 Python 编程中，字典（Dictionary）是一种非常重要的数据结构，用于存储键值对。字典是一种可变、无序的数据集合，其键和值之间存在唯一的映射关系。本篇文章将深入讲解 Python 字典的定义、操作和应用，帮助您更好地理解和运用这种强大的数据结构。</p>
+<h2 id="什么是-Python-字典？"><a href="#什么是-Python-字典？" class="headerlink" title="什么是 Python 字典？"></a>什么是 Python 字典？</h2><p>Python 字典是一种键值对的集合，用花括号 <code>&#123;&#125;</code> 定义，每个键值对之间用冒号 <code>:</code> 分隔。字典中的键必须是唯一的，而值则没有唯一性要求。下面是一个简单的 Python 字典示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">fruit_dict = &#123;<span class="hljs-string">&quot;apple&quot;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&quot;banana&quot;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&quot;cherry&quot;</span>: <span class="hljs-number">5</span>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>在这个示例中，<code>&quot;apple&quot;</code>, <code>&quot;banana&quot;</code> 和 <code>&quot;cherry&quot;</code> 是字典 <code>fruit_dict</code> 的键，对应的值分别为 <code>2</code>, <code>3</code> 和 <code>5</code>。</p>
+<h2 id="字典操作"><a href="#字典操作" class="headerlink" title="字典操作"></a>字典操作</h2><h3 id="访问元素"><a href="#访问元素" class="headerlink" title="访问元素"></a>访问元素</h3><p>可以使用键来访问字典中的值：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(fruit_dict[<span class="hljs-string">&quot;banana&quot;</span>])  <span class="hljs-comment"># 输出：3</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="添加或修改元素"><a href="#添加或修改元素" class="headerlink" title="添加或修改元素"></a>添加或修改元素</h3><p>可以通过键来添加新的键值对或修改已有键的值：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">fruit_dict[<span class="hljs-string">&quot;orange&quot;</span>] = <span class="hljs-number">4</span>  <span class="hljs-comment"># 添加新键值对</span><br>fruit_dict[<span class="hljs-string">&quot;apple&quot;</span>] = <span class="hljs-number">6</span>   <span class="hljs-comment"># 修改已有键的值</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h3><p>使用 <code>del</code> 关键字或 <code>pop()</code> 方法来删除字典中的键值对：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">del</span> fruit_dict[<span class="hljs-string">&quot;cherry&quot;</span>]    <span class="hljs-comment"># 删除键为 &quot;cherry&quot; 的键值对</span><br><br>removed_value = fruit_dict.pop(<span class="hljs-string">&quot;banana&quot;</span>)  <span class="hljs-comment"># 删除键为 &quot;banana&quot; 的键值对，并返回其值</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="字典方法"><a href="#字典方法" class="headerlink" title="字典方法"></a>字典方法</h3><p>Python 字典提供了丰富的 方法来操作字典，例如：</p>
+<ul>
+<li><code>keys()</code>：返回字典中所有的键。</li>
+<li><code>values()</code>：返回字典中所有的值。</li>
+<li><code>items()</code>：返回字典中所有的键值对。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 遍历所有键</span><br><span class="hljs-keyword">for</span> key <span class="hljs-keyword">in</span> fruit_dict.keys():<br>    <span class="hljs-built_in">print</span>(key)<br><br><span class="hljs-comment"># 遍历所有值</span><br><span class="hljs-keyword">for</span> value <span class="hljs-keyword">in</span> fruit_dict.values():<br>    <span class="hljs-built_in">print</span>(value)<br><br><span class="hljs-comment"># 遍历所有键值对</span><br><span class="hljs-keyword">for</span> key, value <span class="hljs-keyword">in</span> fruit_dict.items():<br>    <span class="hljs-built_in">print</span>(key, value)<br></code></pre></td></tr></table></figure>
+
+<h3 id="字典应用"><a href="#字典应用" class="headerlink" title="字典应用"></a>字典应用</h3><p>字典在 Python 编程中有着广泛的应用，特别适合以下场景：</p>
+<ul>
+<li>数据存储：适用于存储需要通过唯一键访问的数据。</li>
+<li>快速查找：由于字典使用哈希表实现，查找速度非常快。</li>
+<li>数据处理：用于处理数据，统计频率等。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 快速查找示例</span><br>fruits = &#123;<span class="hljs-string">&quot;apple&quot;</span>: <span class="hljs-number">10</span>, <span class="hljs-string">&quot;banana&quot;</span>: <span class="hljs-number">5</span>, <span class="hljs-string">&quot;cherry&quot;</span>: <span class="hljs-number">8</span>&#125;<br><span class="hljs-keyword">if</span> <span class="hljs-string">&quot;apple&quot;</span> <span class="hljs-keyword">in</span> fruits:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;We have apple in stock.&quot;</span>)<br><br><span class="hljs-comment"># 数据处理示例</span><br>word_freq = &#123;&#125;<br>words = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>, <span class="hljs-string">&quot;apple&quot;</span>]<br><span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> words:<br>    <span class="hljs-keyword">if</span> word <span class="hljs-keyword">in</span> word_freq:<br>        word_freq[word] += <span class="hljs-number">1</span><br>    <span class="hljs-keyword">else</span>:<br>        word_freq[word] = <span class="hljs-number">1</span><br><span class="hljs-built_in">print</span>(word_freq)  <span class="hljs-comment"># 输出：&#123;&quot;apple&quot;: 2, &quot;banana&quot;: 1, &quot;cherry&quot;: 1&#125;</span><br></code></pre></td></tr></table></figure>
+
+<p>通过深入了解 Python 字典的定义、操作和应用，您可以更加灵活地处理数据，并写出更加高效的Python程序。希望本文对您有所帮助，如有任何问题或疑问，欢迎留言讨论。祝学习愉快！</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>教程</tag>
+        <tag>编程</tag>
+        <tag>基础教程</tag>
+      </tags>
+  </entry>
 </search>
