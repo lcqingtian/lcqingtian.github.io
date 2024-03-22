@@ -107,7 +107,7 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/21/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
+    <url>/2024/03/22/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h1 id="RedisTemplate、Jedis、Lettuce、Redisson对比"><a href="#RedisTemplate、Jedis、Lettuce、Redisson对比" class="headerlink" title="RedisTemplate、Jedis、Lettuce、Redisson对比"></a>RedisTemplate、Jedis、Lettuce、Redisson对比</h1><p>以下是对以上Redis客户端库的对比分析。</p>
 <h2 id="RedisTemplate"><a href="#RedisTemplate" class="headerlink" title="RedisTemplate"></a>RedisTemplate</h2><p>来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问题，此外提供了对Redis Pub&#x2F;Sub模型的抽象。但是需要注意的是，它需要Spring环境的支撑存在。</p>
 <h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><p>Jedis是Redis的Java实现的客户端，其API提供了比较全面的Redis命令的支持。Jedis用法简便，支持排序、连接池、管道等操作。另外，使用Jedis开发者需要提前了解redis所有命令和参数，才能开发出一个完善的系统，因此上手难度会比较大。</p>
@@ -183,7 +183,7 @@
       </categories>
   </entry>
   <entry>
-    <title>探索 Python：安装与快速入门</title>
+    <title>2、探索 Python：安装与快速入门</title>
     <url>/2024/03/22/python/Python%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<p>当撰写关于 Python 安装和快速入门的博客时，记得详细列出安装步骤和基础概念，让读者能够快速上手。以下是一个示例博客：</p>
 <hr>
@@ -239,7 +239,7 @@
       </tags>
   </entry>
   <entry>
-    <title>深入了解Python变量：定义、赋值、全局变量和多重赋值</title>
+    <title>5、深入了解Python变量：定义、赋值、全局变量和多重赋值</title>
     <url>/2024/03/23/python/Python%E5%8F%98%E9%87%8F/</url>
     <content><![CDATA[<p>深入了解Python变量：定义、赋值、全局变量和多重赋值</p>
 <p>在Python编程中，变量是一种重要的概念，用于存储和操作数据。本教程将继续介绍Python中变量的更多内容，包括多重赋值和全局变量的概念。</p>
@@ -269,7 +269,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Python指定变量类型</title>
+    <title>7、Python指定变量类型</title>
     <url>/2024/03/22/python/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<p>在 Python 中，字符串是由单引号或双引号引起来的，您可以使用 print() 函数来显示字符串文字。字符串也可以分配给变量，使用三个引号可以创建多行字符串。以下是关于字符串的更多细节：</p>
 <h3 id="字符串的创建和显示"><a href="#字符串的创建和显示" class="headerlink" title="字符串的创建和显示"></a>字符串的创建和显示</h3><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello&quot;</span>)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Hello&#x27;</span>)<br><br>a = <span class="hljs-string">&quot;Hello&quot;</span><br><span class="hljs-built_in">print</span>(a)<br><br><span class="hljs-comment"># 多行字符串</span><br>a = <span class="hljs-string">&quot;&quot;&quot;Lorem ipsum dolor sit amet,</span><br><span class="hljs-string">consectetur adipiscing elit,</span><br><span class="hljs-string">sed do eiusmod tempor incididunt</span><br><span class="hljs-string">ut labore et dolore magna aliqua.&quot;&quot;&quot;</span><br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure>
@@ -355,7 +355,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Python指定变量类型</title>
+    <title>6、Python指定变量类型</title>
     <url>/2024/03/22/python/Python%E6%8C%87%E5%AE%9A%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>在 Python 中，通常情况下不需要显式指定变量的类型，因为 Python 是一种动态类型语言，变量的类型会根据赋给它们的值自动推断。然而，有时候我们希望限定变量的类型，可以使用类型标注来指定变量的类型。类型标注不会影响程序的运行，但可以提高代码的可读性和可维护性。</p>
 <p>以下是一些示例：</p>
@@ -375,7 +375,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 数字表示</title>
+    <title>8、Python 数字表示</title>
     <url>/2024/03/22/python/Python%E6%95%B0%E5%AD%97/</url>
     <content><![CDATA[<p>在 Python 中，数字类型是一种基本的数据类型，包括整数（int）、浮点数（float）和复数（complex）。当您为数字类型变量赋值时，便会创建相应的数值对象。以下是对数字类型及其操作的简要概述：</p>
 <h3 id="整数（int）"><a href="#整数（int）" class="headerlink" title="整数（int）"></a>整数（int）</h3><p>整数是不带小数部分的正数或负数，长度没有限制。可以使用内置函数<code>type()</code>来验证整数类型。</p>
@@ -406,7 +406,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 数据类型</title>
+    <title>9、Python 数据类型</title>
     <url>/2024/03/22/python/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p>##Python内置数据类型概览及应用</p>
 <p>在Python编程中，数据类型是不可或缺的概念。了解Python内置的数据类型及其特性，对于编写高效和可靠的代码至关重要。本文将介绍Python中常见的内置数据类型及其应用场景。</p>
@@ -449,7 +449,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 注释</title>
+    <title>3、Python 注释</title>
     <url>/2024/03/22/python/Python%E6%B3%A8%E9%87%8A/</url>
     <content><![CDATA[<p>探索Python注释: 代码注释的重要性与最佳实践</p>
 <p>在编写Python代码时，注释起着至关重要的作用。它不仅可以帮助他人理解代码的逻辑和目的，还可以提高代码的可读性和可维护性。在本文中，我们将深入探讨Python中注释的作用、用法和最佳实践。</p>
@@ -480,7 +480,7 @@
       </tags>
   </entry>
   <entry>
-    <title>掌握Python语法的关键要点</title>
+    <title>4、掌握Python语法的关键要点</title>
     <url>/2024/03/22/python/Python%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>在这里给您编写一些关于Python语法的教程，展示了Python中一些基本概念和代码示例。接下来我将展示一个心得综述，同时也会加入一些关于Python语法以及执行Python语法的综述。</p>
 <p><strong>心得教程：掌握Python语法的关键要点</strong></p>
@@ -524,7 +524,7 @@
       </tags>
   </entry>
   <entry>
-    <title>探索 Python：一门兼具力量与易用性的编程语言</title>
+    <title>1、探索 Python：一门兼具力量与易用性的编程语言</title>
     <url>/2024/03/21/python/python%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<p><strong>探索 Python：一门兼具力量与易用性的编程语言</strong></p>
 <p>Python是一门多用途的高级编程语言，它以其简洁明了的语法和强大的功能而受到广泛推崇。在本篇博客中，我们将探索Python的定义、应用领域、选择原因以及与其他编程语言的比较。</p>
@@ -658,7 +658,7 @@ public class LocalFileUtils &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/21/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
+    <url>/2024/03/22/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
     <content><![CDATA[<p>AWS亚马逊云账号注册 全球云服务器12个月免费试用详细教程</p>
 ]]></content>
   </entry>
