@@ -1,4 +1,6 @@
+http://example.com/2024/03/22/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/
 http://example.com/2024/03/12/%E5%8D%9A%E5%AE%A2%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B/
+http://example.com/2024/03/12/Redis/Redis%E9%94%81/
 http://example.com/2024/03/12/linux/linux%E5%91%BD%E4%BB%A4/
 http://example.com/2024/03/21/python/01_python%E4%BB%8B%E7%BB%8D/
 http://example.com/2024/03/21/python/02_Python%E5%85%A5%E9%97%A8/
@@ -21,9 +23,8 @@ http://example.com/2024/03/21/python/12_Python%E5%88%97%E8%A1%A8/
 http://example.com/2024/03/21/python/13_Python%E5%85%83%E7%A5%96/
 http://example.com/2024/03/21/python/14_Pythonset/
 http://example.com/2024/03/21/python/15_Python%E5%AD%97%E5%85%B8/
+http://example.com/2024/03/21/python/16_Python%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF/
 http://example.com/about/index.html
-http://example.com/2024/03/22/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/
-http://example.com/2024/03/12/Redis/Redis%E9%94%81/
 http://example.com/
 http://example.com/tags/Python/
 http://example.com/tags/%E6%95%99%E7%A8%8B/

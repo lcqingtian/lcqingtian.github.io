@@ -903,7 +903,7 @@ public class LocalFileUtils &#123;
       </tags>
   </entry>
   <entry>
-    <title>14、 Python 字典</title>
+    <title>15、 Python 字典</title>
     <url>/2024/03/21/python/15_Python%E5%AD%97%E5%85%B8/</url>
     <content><![CDATA[<p>在 Python 编程中，字典（Dictionary）是一种非常重要的数据结构，用于存储键值对。字典是一种可变、无序的数据集合，其键和值之间存在唯一的映射关系。本篇文章将深入讲解 Python 字典的定义、操作和应用，帮助您更好地理解和运用这种强大的数据结构。</p>
 <h2 id="什么是-Python-字典？"><a href="#什么是-Python-字典？" class="headerlink" title="什么是 Python 字典？"></a>什么是 Python 字典？</h2><p>Python 字典是一种键值对的集合，用花括号 <code>&#123;&#125;</code> 定义，每个键值对之间用冒号 <code>:</code> 分隔。字典中的键必须是唯一的，而值则没有唯一性要求。下面是一个简单的 Python 字典示例：</p>
@@ -936,6 +936,50 @@ public class LocalFileUtils &#123;
 <figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 快速查找示例</span><br>fruits = &#123;<span class="hljs-string">&quot;apple&quot;</span>: <span class="hljs-number">10</span>, <span class="hljs-string">&quot;banana&quot;</span>: <span class="hljs-number">5</span>, <span class="hljs-string">&quot;cherry&quot;</span>: <span class="hljs-number">8</span>&#125;<br><span class="hljs-keyword">if</span> <span class="hljs-string">&quot;apple&quot;</span> <span class="hljs-keyword">in</span> fruits:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;We have apple in stock.&quot;</span>)<br><br><span class="hljs-comment"># 数据处理示例</span><br>word_freq = &#123;&#125;<br>words = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>, <span class="hljs-string">&quot;apple&quot;</span>]<br><span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> words:<br>    <span class="hljs-keyword">if</span> word <span class="hljs-keyword">in</span> word_freq:<br>        word_freq[word] += <span class="hljs-number">1</span><br>    <span class="hljs-keyword">else</span>:<br>        word_freq[word] = <span class="hljs-number">1</span><br><span class="hljs-built_in">print</span>(word_freq)  <span class="hljs-comment"># 输出：&#123;&quot;apple&quot;: 2, &quot;banana&quot;: 1, &quot;cherry&quot;: 1&#125;</span><br></code></pre></td></tr></table></figure>
 
 <p>通过深入了解 Python 字典的定义、操作和应用，您可以更加灵活地处理数据，并写出更加高效的Python程序。希望本文对您有所帮助，如有任何问题或疑问，欢迎留言讨论。祝学习愉快！</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>教程</tag>
+        <tag>编程</tag>
+        <tag>基础教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>16、 Python 条件语句和循环</title>
+    <url>/2024/03/21/python/16_Python%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF/</url>
+    <content><![CDATA[<p>在 Python 编程中，条件语句和循环是控制程序执行流程和重复执行代码块的重要工具。条件语句用于根据特定条件执行不同的操作，而循环结构则用于重复执行相同的代码块。本文将详细介绍 Python 中条件语句（if 语句）和循环（for 循环和 while 循环）的语法和用法，帮助初学者快速掌握这些基础知识。</p>
+<h3 id="Python-条件语句：if-语句"><a href="#Python-条件语句：if-语句" class="headerlink" title="Python 条件语句：if 语句"></a>Python 条件语句：if 语句</h3><p>在 Python 中，if 语句用于根据条件的真假来决定是否执行特定的代码块。if 语句的基本语法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> condition:<br>    <span class="hljs-comment"># 如果条件为真，则执行此处代码块</span><br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-comment"># 如果条件为假，则执行此处代码块</span><br></code></pre></td></tr></table></figure>
+
+<p>其中，condition 是要评估的条件表达式，根据其结果为 True 还是 False 来确定执行哪个代码块。下面是一个简单的示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">age = <span class="hljs-number">18</span><br><span class="hljs-keyword">if</span> age &gt;= <span class="hljs-number">18</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;You are an adult.&quot;</span>)<br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;You are a minor.&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<p>除了 if 和 else 之外，还可以使用 elif 来处理多个条件的情况：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">score = <span class="hljs-number">75</span><br><span class="hljs-keyword">if</span> score &gt;= <span class="hljs-number">90</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;A&quot;</span>)<br><span class="hljs-keyword">elif</span> score &gt;= <span class="hljs-number">80</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;B&quot;</span>)<br><span class="hljs-keyword">elif</span> score &gt;= <span class="hljs-number">70</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;C&quot;</span>)<br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;D&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<h3 id="Python-循环结构"><a href="#Python-循环结构" class="headerlink" title="Python 循环结构"></a>Python 循环结构</h3><h4 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h4><p>for 循环用于遍历序列（如列表、元组、字符串）中的每个元素，并执行特定操作。其基本语法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> iterable:<br>    <span class="hljs-comment"># 对每个元素执行操作</span><br></code></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">fruits = [<span class="hljs-string">&quot;apple&quot;</span>, <span class="hljs-string">&quot;banana&quot;</span>, <span class="hljs-string">&quot;cherry&quot;</span>]<br><span class="hljs-keyword">for</span> fruit <span class="hljs-keyword">in</span> fruits:<br>    <span class="hljs-built_in">print</span>(fruit)<br></code></pre></td></tr></table></figure>
+
+<h4 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h4><p>while 循环在条件满 循环体中的代码块满足条件时会一直执行，直到条件不再满足为止。其基本语法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> condition:<br>    <span class="hljs-comment"># 循环体</span><br></code></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">count = <span class="hljs-number">0</span><br><span class="hljs-keyword">while</span> count &lt; <span class="hljs-number">5</span>:<br>    <span class="hljs-built_in">print</span>(count)<br>    count += <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="Python-条件语句和循环的应用场景"><a href="#Python-条件语句和循环的应用场景" class="headerlink" title="Python 条件语句和循环的应用场景"></a>Python 条件语句和循环的应用场景</h3><p>条件语句和循环在实际开发中经常被用到，常见的应用场景包括：</p>
+<ul>
+<li>遍历列表或集合：使用 for 循环可以便利列表、字典等数据结构的所有元素。</li>
+<li>条件筛选：结合 if 语句可以对数据进行筛选和处理。</li>
+<li>循环控制：使用 break 和 continue 可以控制循环的终止和跳过。</li>
+<li>简化重复操作：将重复的代码封装到循环中，提高代码的复用性。</li>
+</ul>
+<p>总结：掌握 Python 的条件语句和循环结构是学习编程的重要一步，它们能帮助我们实现复杂的逻辑和算法。通过不断练习和实践，您将更加熟练地运用这些基础知识，进一步提升编程技能。祝您编程愉快！</p>
 ]]></content>
       <categories>
         <category>Python</category>
