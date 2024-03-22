@@ -663,7 +663,7 @@ public class LocalFileUtils &#123;
 ]]></content>
   </entry>
   <entry>
-    <title>9、Python 布尔</title>
+    <title>10、Python 布尔</title>
     <url>/2024/03/21/python/10_Python%E5%B8%83%E5%B0%94/</url>
     <content><![CDATA[<p>布尔值代表两个值之一：True 或 False。</p>
 <p>在编程中，您经常需要知道表达式是否为 True 还是 False。</p>
@@ -699,10 +699,9 @@ public class LocalFileUtils &#123;
       </tags>
   </entry>
   <entry>
-    <title>9、Python 运算符</title>
+    <title>11、Python 运算符</title>
     <url>/2024/03/21/python/11_Python%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
-    <content><![CDATA[<p>标题：深入了解 Python 运算符：算术运算符、赋值运算符、比较运算符、逻辑运算符、身份运算符、成员运算符和按位运算符</p>
-<p>在 Python 编程中，运算符是用来执行操作的符号。了解和熟练运用各种运算符是写出高效和功能丰富代码的重要一步。在本篇博客中，我们将深入探讨 Python 中的各种运算符，包括算术运算符、赋值运算符、比较运算符、逻辑运算符、身份运算符、成员运算符和按位运算符。</p>
+    <content><![CDATA[<p>在 Python 编程中，运算符是用来执行操作的符号。了解和熟练运用各种运算符是写出高效和功能丰富代码的重要一步。在本篇博客中，我们将深入探讨 Python 中的各种运算符，包括算术运算符、赋值运算符、比较运算符、逻辑运算符、身份运算符、成员运算符和按位运算符。</p>
 <h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2><p>Python 中的算术运算符用于执行基本的数学运算。常见的算术运算符包括：</p>
 <ul>
 <li><code>+</code>：加法运算符</li>
