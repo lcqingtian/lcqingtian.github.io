@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title></title>
-    <url>/2024/03/26/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
+    <url>/2024/03/27/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h1 id="RedisTemplate、Jedis、Lettuce、Redisson对比"><a href="#RedisTemplate、Jedis、Lettuce、Redisson对比" class="headerlink" title="RedisTemplate、Jedis、Lettuce、Redisson对比"></a>RedisTemplate、Jedis、Lettuce、Redisson对比</h1><p>以下是对以上Redis客户端库的对比分析。</p>
 <h2 id="RedisTemplate"><a href="#RedisTemplate" class="headerlink" title="RedisTemplate"></a>RedisTemplate</h2><p>来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问题，此外提供了对Redis Pub&#x2F;Sub模型的抽象。但是需要注意的是，它需要Spring环境的支撑存在。</p>
 <h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><p>Jedis是Redis的Java实现的客户端，其API提供了比较全面的Redis命令的支持。Jedis用法简便，支持排序、连接池、管道等操作。另外，使用Jedis开发者需要提前了解redis所有命令和参数，才能开发出一个完善的系统，因此上手难度会比较大。</p>
@@ -658,7 +658,7 @@ public class LocalFileUtils &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
+    <url>/2024/03/27/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
     <content><![CDATA[<p>根据搜索结果，注册AWS（亚马逊云服务）账号并申请全球云服务器12个月免费试用的详细教程如下：</p>
 <h3 id="注册AWS账户准备条件："><a href="#注册AWS账户准备条件：" class="headerlink" title="注册AWS账户准备条件："></a>注册AWS账户准备条件：</h3><ol>
 <li><strong>邮箱</strong>：一个有效的电子邮箱地址，建议使用国外邮箱如Gmail、Outlook、Hotmail等，避免使用国内邮箱如qq、163等。</li>
@@ -699,6 +699,29 @@ public class LocalFileUtils &#123;
 </ul>
 <p>请按照上述步骤操作，如果在注册过程中遇到任何问题，可以参考AWS官方提供的FAQs或联系客服支持。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Redis实现延迟队列教程</title>
+    <url>/2024/03/12/Redis/Redis%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E9%98%9F%E5%88%97/</url>
+    <content><![CDATA[<h1 id="Redisson-实现延迟队列教程"><a href="#Redisson-实现延迟队列教程" class="headerlink" title="Redisson 实现延迟队列教程"></a>Redisson 实现延迟队列教程</h1><p>Redisson是一个在Redis的基础上实现的Java驻内存对象和服务的集合。它简化了在分布式环境中使用Redis的操作，提供了丰富的功能，包括分布式锁、原子长整型、集合、缓存、发布订阅等。在本教程中，我们将探讨如何使用Redisson来实现一个延迟队列。</p>
+<h2 id="什么是延迟队列？"><a href="#什么是延迟队列？" class="headerlink" title="什么是延迟队列？"></a>什么是延迟队列？</h2><p>延迟队列是一种特殊类型的队列，它允许我们插入一个元素，并在将来的某个时间点获取它。这种队列在需要定时执行任务或者延迟处理消息的场景下非常有用。</p>
+<h2 id="Redisson延迟队列的实现"><a href="#Redisson延迟队列的实现" class="headerlink" title="Redisson延迟队列的实现"></a>Redisson延迟队列的实现</h2><h3 id="1-引入依赖"><a href="#1-引入依赖" class="headerlink" title="1. 引入依赖"></a>1. 引入依赖</h3><p>首先，我们需要在项目的<code>pom.xml</code>文件中添加Redisson的依赖：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.redisson<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>redisson<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.13.1<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="2-封装RedissonDelayQueue类"><a href="#2-封装RedissonDelayQueue类" class="headerlink" title="2. 封装RedissonDelayQueue类"></a>2. 封装RedissonDelayQueue类</h3><p>接下来，我们创建一个<code>RedissonDelayQueue</code>类，用于封装Redisson延迟队列的操作。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Component</span><br><span class="hljs-meta">@Slf4j</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RedissonDelayQueue</span> &#123;<br><br>    <span class="hljs-keyword">private</span> RedissonClient redissonClient;<br><br>    <span class="hljs-keyword">private</span> RDelayedQueue&lt;String&gt; delayQueue;<br>    <span class="hljs-keyword">private</span> RBlockingQueue&lt;String&gt; blockingQueue;<br><br>    <span class="hljs-meta">@PostConstruct</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">()</span> &#123;<br>        initDelayQueue();<br>        startDelayQueueConsumer();<br>    &#125;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">initDelayQueue</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-type">Config</span> <span class="hljs-variable">config</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Config</span>();<br>        <span class="hljs-type">SingleServerConfig</span> <span class="hljs-variable">serverConfig</span> <span class="hljs-operator">=</span> config.useSingleServer();<br>        serverConfig.setAddress(<span class="hljs-string">&quot;redis://localhost:6379&quot;</span>);<br>        redissonClient = Redisson.create(config);<br><br>        blockingQueue = redissonClient.getBlockingQueue(<span class="hljs-string">&quot;SANYOU&quot;</span>);<br>        delayQueue = redissonClient.getDelayedQueue(blockingQueue);<br>    &#125;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">startDelayQueueConsumer</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">new</span> <span class="hljs-title class_">Thread</span>(() -&gt; &#123;<br>            <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) &#123;<br>                <span class="hljs-keyword">try</span> &#123;<br>                    <span class="hljs-type">String</span> <span class="hljs-variable">task</span> <span class="hljs-operator">=</span> blockingQueue.take();<br>                    log.info(<span class="hljs-string">&quot;接收到延迟任务:&#123;&#125;&quot;</span>, task);<br>                    <span class="hljs-comment">// 这里可以添加任务执行的逻辑</span><br>                &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>                    e.printStackTrace();<br>                &#125;<br>            &#125;<br>        &#125;, <span class="hljs-string">&quot;SANYOU-Consumer&quot;</span>).start();<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">offerTask</span><span class="hljs-params">(String task, <span class="hljs-type">long</span> seconds)</span> &#123;<br>        log.info(<span class="hljs-string">&quot;添加延迟任务:&#123;&#125; 延迟时间:&#123;&#125;s&quot;</span>, task, seconds);<br>        delayQueue.offer(task, seconds, TimeUnit.SECONDS);<br>    &#125;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="3-使用延迟队列"><a href="#3-使用延迟队列" class="headerlink" title="3. 使用延迟队列"></a>3. 使用延迟队列</h3><p>现在，我们可以使用<code>RedissonDelayQueue</code>类来添加延迟任务，并在指定的时间后执行它们。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Application</span> &#123;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">RedissonDelayQueue</span> <span class="hljs-variable">delayQueue</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RedissonDelayQueue</span>();<br>        delayQueue.offerTask(<span class="hljs-string">&quot;发送邮件&quot;</span>, <span class="hljs-number">10</span>); <span class="hljs-comment">// 10秒后执行</span><br>        delayQueue.offerTask(<span class="hljs-string">&quot;发送短信&quot;</span>, <span class="hljs-number">20</span>); <span class="hljs-comment">// 20秒后执行</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="原理解析"><a href="#原理解析" class="headerlink" title="原理解析"></a>原理解析</h3><p>Redisson的<code>RDelayedQueue</code>是一个基于Redis的延迟队列实现。它使用Redis的有序集合数据结构来存储任务和它们的执行时间。每个任务都有一个与之关联的分数，该分数表示任务应该执行的时间戳。</p>
+<p>当<code>offer</code>方法被调用时，任务和它的执行时间被添加到有序集合中。<code>RDelayedQueue</code>的消费者会不断检查有序集合中分数最小的元素（即最早应该执行的任务），如果当前时间大于或等于该任务的执行时间，消费者就会从队列中移除并执行该任务。</p>
+<p>这种实现方式使得Redisson的延迟队列既高效又可扩展，因为它利用了Redis的高性能和持久性特性。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>通过本教程，我们学习了如何使用Redisson来实现一个延迟队列。我们创建了一个<code>RedissonDelayQueue</code>类，它可以添加延迟任务，并在指定的时间后自动执行它们。这种实现方式非常适合需要定时或延迟处理任务的场景。</p>
+]]></content>
+      <categories>
+        <category>Redis</category>
+      </categories>
   </entry>
   <entry>
     <title>10、Python 布尔</title>
@@ -1031,7 +1054,7 @@ public class LocalFileUtils &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/26/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/</url>
+    <url>/2024/03/27/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/</url>
     <content><![CDATA[<p>当然，以下是完整的美化后的博客文章，包括完整的代码示例：</p>
 <hr>
 <h1 id="Spring-Boot-实现延时队列"><a href="#Spring-Boot-实现延时队列" class="headerlink" title="Spring Boot 实现延时队列"></a>Spring Boot 实现延时队列</h1><p><strong>发布日期:</strong> 2024-03-18<br><strong>类别:</strong> Spring Boot</p>
