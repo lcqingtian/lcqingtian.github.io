@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="RedisTemplate、Jedis、Lettuce、Redisson对比以下是对以上Redis客户端库的对比分析。 RedisTemplate来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问">
+    <meta name="description" content="第1周 - ERC-20、其变体和代币销售 学习ERC-20标准和它的实现细节。 探讨ERC-20代币的不同变体，如ERC-223和ERC-667。 了解代币销售的流程和最佳实践。 创建和部署自己的ERC-20代币。  第2周 - ERC721、其变体、市场和质押 掌握ERC721标准和非同质化代币（NFT）的概念。 学习市场上流行的NFT项目和它们的用例。 了解质押NFT的机制和它的潜在用途。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2024/03/27/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/index.html">
+<meta property="og:title" content="web3学习大纲">
+<meta property="og:url" content="http://example.com/2024/03/12/web3/01_web3%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="RedisTemplate、Jedis、Lettuce、Redisson对比以下是对以上Redis客户端库的对比分析。 RedisTemplate来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问">
+<meta property="og:description" content="第1周 - ERC-20、其变体和代币销售 学习ERC-20标准和它的实现细节。 探讨ERC-20代币的不同变体，如ERC-223和ERC-667。 了解代币销售的流程和最佳实践。 创建和部署自己的ERC-20代币。  第2周 - ERC721、其变体、市场和质押 掌握ERC721标准和非同质化代币（NFT）的概念。 学习市场上流行的NFT项目和它们的用例。 了解质押NFT的机制和它的潜在用途。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-27T11:34:25.536Z">
-<meta property="article:modified_time" content="2024-03-27T11:34:25.536Z">
+<meta property="article:published_time" content="2024-03-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-04-01T01:17:45.672Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -32,7 +32,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Hexo</title>
+  <title>web3学习大纲 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -223,7 +223,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="web3学习大纲"></span>
           
         </div>
 
@@ -234,8 +234,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-27 19:34" pubdate>
-          March 27, 2024 pm
+        <time datetime="2024-03-12 00:00" pubdate>
+          March 12, 2024 am
         </time>
       </span>
     
@@ -246,7 +246,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k words
+          984 words
         
       </span>
     
@@ -257,7 +257,7 @@
         
         
         
-          10 mins
+          9 mins
         
       </span>
     
@@ -307,41 +307,82 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">web3学习大纲</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="RedisTemplate、Jedis、Lettuce、Redisson对比"><a href="#RedisTemplate、Jedis、Lettuce、Redisson对比" class="headerlink" title="RedisTemplate、Jedis、Lettuce、Redisson对比"></a>RedisTemplate、Jedis、Lettuce、Redisson对比</h1><p>以下是对以上Redis客户端库的对比分析。</p>
-<h2 id="RedisTemplate"><a href="#RedisTemplate" class="headerlink" title="RedisTemplate"></a>RedisTemplate</h2><p>来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问题，此外提供了对Redis Pub&#x2F;Sub模型的抽象。但是需要注意的是，它需要Spring环境的支撑存在。</p>
-<h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><p>Jedis是Redis的Java实现的客户端，其API提供了比较全面的Redis命令的支持。Jedis用法简便，支持排序、连接池、管道等操作。另外，使用Jedis开发者需要提前了解redis所有命令和参数，才能开发出一个完善的系统，因此上手难度会比较大。</p>
-<h2 id="Lettuce"><a href="#Lettuce" class="headerlink" title="Lettuce"></a>Lettuce</h2><p>Lettuce为Redis提供了 Scala，RxJava，和响应式编程模型以及命令式使用方法も提供している。Lettuce基于Netty框架。连接实例（StatefulRedisConnection）可以在多个线程间并发访问，应为StatefulRedisConnection是线程安全的。Lettuce的性能比Jedis更优，API更丰富一些。</p>
-<h2 id="Redisson"><a href="#Redisson" class="headerlink" title="Redisson"></a>Redisson</h2><p>Redisson 是一个在Redis的基础上实现的Java驻内存数据网格（In-Memory Data Grid）。它不仅提供了一系列的分布式的Java常用类，且这些分布式对象都是由Redis支持的，因此你可以把Redisson当成一个分布式的工具类库 。对于Redis的常规操作，你可以把Redisson当成Jedis的一个封装，对于复杂操作，你可以把Redisson当成一个功能丰富的客户端。</p>
-<h2 id="使用便利度"><a href="#使用便利度" class="headerlink" title="使用便利度"></a>使用便利度</h2><ul>
-<li><strong>RedisTemplate</strong>：其主要优点在于对Key、String、List、Set、ZSet、Hash等类型数据进行操作时，提供了一套抽象，使得我们可以更简单方便地进行操作。不足在于需要Spring环境支持。</li>
-<li><strong>Jedis</strong>：Jedis的API提供了全面的Redis命令支持。不足在于上手难度大，因为使用Jedis需要开发者提前了解Redis所有命令和参数。</li>
-<li><strong>Lettuce</strong>：提供了响应式编程模型，基于Netty框架，且是线程安全的。对于高并发的应用，无需像Jedis那样创建大量连接对象，减轻系统负担。缺点是需要对响应式编程有一定理解才能更好地使用。</li>
-<li><strong>Redisson</strong>：提供了丰富的分布式对象和服务，可以当做分布式工具类库使用。且Redisson对于Redis的常规操作也提供了封装，使得操作更为便捷。</li>
+                <h3 id="第1周-ERC-20、其变体和代币销售"><a href="#第1周-ERC-20、其变体和代币销售" class="headerlink" title="第1周 - ERC-20、其变体和代币销售"></a>第1周 - ERC-20、其变体和代币销售</h3><ul>
+<li>学习ERC-20标准和它的实现细节。</li>
+<li>探讨ERC-20代币的不同变体，如ERC-223和ERC-667。</li>
+<li>了解代币销售的流程和最佳实践。</li>
+<li>创建和部署自己的ERC-20代币。</li>
 </ul>
-<h2 id="集成难易程度"><a href="#集成难易程度" class="headerlink" title="集成难易程度"></a>集成难易程度</h2><ul>
-<li><strong>RedisTemplate</strong>：由于与Spring框架集成，如果是在Spring环境下开发，集成十分便捷。如果不是在Spring环境下，则需要额外配置才能使用。</li>
-<li><strong>Jedis</strong>：Jedis的集成十分简单，但是可能需要编写额外的代码来支持连接池等特性。</li>
-<li><strong>Lettuce</strong>：与Spring集成简单，Spring Boot也提供了自动配置。</li>
-<li><strong>Redisson</strong>：Redisson与Spring集成较为方便，但使用其中的分布式对象或服务时可能需要更多配置。</li>
+<h3 id="第2周-ERC721、其变体、市场和质押"><a href="#第2周-ERC721、其变体、市场和质押" class="headerlink" title="第2周 - ERC721、其变体、市场和质押"></a>第2周 - ERC721、其变体、市场和质押</h3><ul>
+<li>掌握ERC721标准和非同质化代币（NFT）的概念。</li>
+<li>学习市场上流行的NFT项目和它们的用例。</li>
+<li>了解质押NFT的机制和它的潜在用途。</li>
+<li>开发一个简单的NFT市场原型。</li>
 </ul>
-<h2 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h2><ul>
-<li><strong>RedisTemplate</strong>：性能受限于其内部使用的连接库，可能选择Jedis或者Lettuce。</li>
-<li><strong>Jedis</strong>：Jedis在高并发的场景中性能可能会有 一些问题，原因是Jedis不是线程安全的，需要使用连接池管理Jedis连接。在大并发量下，Jedis连接因此可能会成为瓶颈。</li>
-<li><strong>Lettuce</strong>：Lettuce基于Netty，其连接实例（StatefulRedisConnection）可以在多个线程间并发访问，因为StatefulRedisConnection是线程安全的。相比于Jedis，Lettuce的性能在高并发情况下更优。</li>
-<li><strong>Redisson</strong>：性能强大，优于Jedis和Lettuce。Redisson提供了更多的功能和更高的性能，内部实现上，Redisson采用了Netty框架进行网络通信，同时内部采用了许多并发处理，使得其在并发处理方面具有了很高的效率。</li>
+<h3 id="第3周-ERC1155、ethers-js、metamask、构建前端应用程序"><a href="#第3周-ERC1155、ethers-js、metamask、构建前端应用程序" class="headerlink" title="第3周 - ERC1155、ethers.js、metamask、构建前端应用程序"></a>第3周 - ERC1155、ethers.js、metamask、构建前端应用程序</h3><ul>
+<li>学习ERC1155多代币标准的基础知识。</li>
+<li>熟悉ethers.js库和MetaMask的使用。</li>
+<li>构建一个具有前端用户界面的区块链应用程序。</li>
+<li>了解如何与智能合约交互并展示数据。</li>
 </ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在选择具体的Redis Java客户端时，需要综合考虑应用的具体需求、开发团队的技术栈、性能需求等。</p>
-<ul>
-<li>如果你的项目是基于Spring的，那么RedisTemplate可能是最方便的选择。</li>
-<li>如果你的项目特别关注性能，并且并发量高，Lettuce或者Redisson会是更好的选择。</li>
-<li>如果你需要更便捷地使用Redis提供的分布式工具类库，Redisson是一个不错的选择。</li>
+<h3 id="第4周-安全帽、单元测试、突变测试和静态分析"><a href="#第4周-安全帽、单元测试、突变测试和静态分析" class="headerlink" title="第4周 - 安全帽、单元测试、突变测试和静态分析"></a>第4周 - 安全帽、单元测试、突变测试和静态分析</h3><ul>
+<li>学习Solidity的安全最佳实践。</li>
+<li>编写单元测试和突变测试来验证智能合约的健壮性。</li>
+<li>了解静态分析工具的使用和重要性。</li>
+<li>完成一系列关于安全性的练习和案例研究。</li>
 </ul>
-<p>最后还需要通过自己的实际使用和测试，以确定哪个客户端最适合自己的项目需求。</p>
+<h3 id="第5周-以太坊客户端：跟踪日志和其他链上数据"><a href="#第5周-以太坊客户端：跟踪日志和其他链上数据" class="headerlink" title="第5周 - 以太坊客户端：跟踪日志和其他链上数据"></a>第5周 - 以太坊客户端：跟踪日志和其他链上数据</h3><ul>
+<li>学习如何使用以太坊客户端来跟踪和分析链上数据。</li>
+<li>构建一个仪表板来实时监控和展示区块链活动。</li>
+<li>了解如何从区块链中提取有价值的信息。</li>
+</ul>
+<h3 id="第6-7周-黑客练习-2-10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞"><a href="#第6-7周-黑客练习-2-10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞" class="headerlink" title="第6-7周 - 黑客练习 2&#x2F;10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞"></a>第6-7周 - 黑客练习 2&#x2F;10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞</h3><ul>
+<li>通过实际的黑客练习来识别和利用智能合约中的常见漏洞。</li>
+<li>学习如何修复这些漏洞并加强合约的安全性。</li>
+<li>理解攻击向量和防御策略。</li>
+</ul>
+<h3 id="第8周-EVM-深入研究，Gas-优化"><a href="#第8周-EVM-深入研究，Gas-优化" class="headerlink" title="第8周 - EVM 深入研究，Gas 优化"></a>第8周 - EVM 深入研究，Gas 优化</h3><ul>
+<li>深入了解以太坊虚拟机（EVM）的工作原理。</li>
+<li>学习如何优化智能合约的Gas消耗。</li>
+<li>通过案例分析来理解Gas优化的重要性。</li>
+</ul>
+<h3 id="第9周-Advanced-Solidity：OpenZeppelin-和高级编程模式的完整浏览"><a href="#第9周-Advanced-Solidity：OpenZeppelin-和高级编程模式的完整浏览" class="headerlink" title="第9周 - Advanced Solidity：OpenZeppelin 和高级编程模式的完整浏览"></a>第9周 - Advanced Solidity：OpenZeppelin 和高级编程模式的完整浏览</h3><ul>
+<li>学习OpenZeppelin库和它的安全合约模块。</li>
+<li>掌握Solidity中的高级编程模式和最佳实践。</li>
+<li>完成一系列高级编程练习。</li>
+</ul>
+<h3 id="第10-11周-Yul-和-Assembly：完全在汇编中构建一个不平凡的智能合约"><a href="#第10-11周-Yul-和-Assembly：完全在汇编中构建一个不平凡的智能合约" class="headerlink" title="第10-11周 - Yul 和 Assembly：完全在汇编中构建一个不平凡的智能合约"></a>第10-11周 - Yul 和 Assembly：完全在汇编中构建一个不平凡的智能合约</h3><ul>
+<li>学习Yul语言和汇编器的基础知识。</li>
+<li>编写和优化Yul代码来构建高性能的智能合约。</li>
+<li>了解Yul和Solidity之间的转换和互操作性。</li>
+</ul>
+<h3 id="第12周-智能合约升级模式：UUPS、Metamorphic智能合约等升级模式"><a href="#第12周-智能合约升级模式：UUPS、Metamorphic智能合约等升级模式" class="headerlink" title="第12周 - 智能合约升级模式：UUPS、Metamorphic智能合约等升级模式"></a>第12周 - 智能合约升级模式：UUPS、Metamorphic智能合约等升级模式</h3><ul>
+<li>学习不同的智能合约升级模式，如UUPS和Metamorphic。</li>
+<li>理解升级智能合约的安全性考虑和挑战。</li>
+<li>完成关于智能合约升级的实践项目。</li>
+</ul>
+<h3 id="第13周-公共签名以及如何破解它们。状态通道和其他与签名相关的模式"><a href="#第13周-公共签名以及如何破解它们。状态通道和其他与签名相关的模式" class="headerlink" title="第13周 - 公共签名以及如何破解它们。状态通道和其他与签名相关的模式"></a>第13周 - 公共签名以及如何破解它们。状态通道和其他与签名相关的模式</h3><ul>
+<li>学习公共签名的概念和它的潜在风险。</li>
+<li>探索状态通道和其他高级签名模式。</li>
+<li>构建一个简单的状态通道原型。</li>
+</ul>
+<h3 id="第14-15周-Defi-协议和黑客"><a href="#第14-15周-Defi-协议和黑客" class="headerlink" title="第14-15周 - Defi 协议和黑客"></a>第14-15周 - Defi 协议和黑客</h3><ul>
+<li>深入了解Defi协议的工作原理和它们的安全性。</li>
+<li>通过分析和黑客练习来识别Defi协议中的漏洞。</li>
+<li>学习如何设计和实现安全的Defi应用。</li>
+</ul>
+<h3 id="第16周-Capstone-1-3-和-Chainlink-预言机"><a href="#第16周-Capstone-1-3-和-Chainlink-预言机" class="headerlink" title="第16周 - Capstone 1&#x2F;3 和 Chainlink 预言机"></a>第16周 - Capstone 1&#x2F;3 和 Chainlink 预言机</h3><ul>
+<li>开始一个综合性的项目，将Chainlink预言机集成到Defi应用中。</li>
+<li>学习如何使用预言机来提供现实世界的数据给智能合约。</li>
+</ul>
+<h3 id="可选的扩展课程"><a href="#可选的扩展课程" class="headerlink" title="可选的扩展课程"></a>可选的扩展课程</h3><ul>
+<li>这些额外的周提供了更高级的主题和实践机会，包括区块链开发运营、智能合约模糊测试、跨链技术、桥梁、L2解决方案、ERC20标准的演变、符号执行和其他高级安全技术。</li>
+</ul>
 
                 
               </div>
@@ -349,6 +390,27 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/web3/" class="category-chain-item">web3</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
@@ -359,8 +421,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://example.com/2024/03/27/Redis/Redis客户端对比/</div>
+      <div>web3学习大纲</div>
+      <div>http://example.com/2024/03/12/web3/01_web3学习大纲/</div>
     </div>
     <div class="license-meta">
       
@@ -372,7 +434,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>March 27, 2024</div>
+          <div>March 12, 2024</div>
         </div>
       
       
@@ -404,21 +466,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/03/27/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/" title="">
+                      <a href="/2024/03/12/ruankao/%E9%80%89%E6%8B%A9%E9%A2%98%E5%8E%86%E5%B9%B4%E8%80%83%E7%82%B9/" title="选择题考点">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">选择题考点</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2024/03/21/python/01_python%E4%BB%8B%E7%BB%8D/" title="1、探索 Python：一门兼具力量与易用性的编程语言">
-                        <span class="hidden-mobile">1、探索 Python：一门兼具力量与易用性的编程语言</span>
-                        <span class="visible-mobile">Next</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

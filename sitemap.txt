@@ -1,4 +1,6 @@
 http://example.com/2024/03/12/%E5%8D%9A%E5%AE%A2%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B/
+http://example.com/2024/03/21/python/04_Python%E8%AF%AD%E6%B3%95/
+http://example.com/2024/03/21/python/05_Python%E5%8F%98%E9%87%8F/
 http://example.com/2024/03/21/python/06_Python%E6%8C%87%E5%AE%9A%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/
 http://example.com/2024/03/21/python/07_Python%E5%AD%97%E7%AC%A6%E4%B8%B2/
 http://example.com/2024/03/21/python/08_Python%E6%95%B0%E5%AD%97/
@@ -8,7 +10,7 @@ http://example.com/2024/03/18/springboot/yml%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE
 http://example.com/2024/03/12/ruankao/2022%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/
 http://example.com/2024/03/12/ruankao/%E4%BF%A1%E6%81%AF%E6%91%98%E8%A6%81/
 http://example.com/2024/03/12/ruankao/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/
-http://example.com/2024/03/27/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/
+http://example.com/2024/04/01/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/
 http://example.com/2024/03/21/python/10_Python%E5%B8%83%E5%B0%94/
 http://example.com/2024/03/21/python/11_Python%E8%BF%90%E7%AE%97%E7%AC%A6/
 http://example.com/2024/03/21/python/12_Python%E5%88%97%E8%A1%A8/
@@ -17,16 +19,15 @@ http://example.com/2024/03/21/python/14_Pythonset/
 http://example.com/2024/03/21/python/15_Python%E5%AD%97%E5%85%B8/
 http://example.com/2024/03/21/python/16_Python%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF/
 http://example.com/2024/03/12/ruankao/%E9%80%89%E6%8B%A9%E9%A2%98%E5%8E%86%E5%B9%B4%E8%80%83%E7%82%B9/
-http://example.com/2024/03/27/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/
+http://example.com/2024/04/01/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/
+http://example.com/2024/03/12/web3/01_web3%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/
 http://example.com/about/index.html
-http://example.com/2024/03/27/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/
+http://example.com/2024/04/01/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/
 http://example.com/2024/03/12/Redis/Redis%E9%94%81/
 http://example.com/2024/03/12/linux/linux%E5%91%BD%E4%BB%A4/
 http://example.com/2024/03/21/python/01_python%E4%BB%8B%E7%BB%8D/
 http://example.com/2024/03/21/python/02_Python%E5%85%A5%E9%97%A8/
 http://example.com/2024/03/21/python/03_Python%E6%B3%A8%E9%87%8A/
-http://example.com/2024/03/21/python/04_Python%E8%AF%AD%E6%B3%95/
-http://example.com/2024/03/21/python/05_Python%E5%8F%98%E9%87%8F/
 http://example.com/2024/03/12/Redis/Redis%E5%AE%9E%E7%8E%B0%E5%BB%B6%E8%BF%9F%E9%98%9F%E5%88%97/
 http://example.com/
 http://example.com/tags/Python/
@@ -39,3 +40,4 @@ http://example.com/categories/linux%E5%91%BD%E4%BB%A4/
 http://example.com/categories/Python/
 http://example.com/categories/springboot/
 http://example.com/categories/%E8%BD%AF%E8%80%83/
+http://example.com/categories/web3/

@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title></title>
-    <url>/2024/03/27/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
+    <url>/2024/04/01/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h1 id="RedisTemplate、Jedis、Lettuce、Redisson对比"><a href="#RedisTemplate、Jedis、Lettuce、Redisson对比" class="headerlink" title="RedisTemplate、Jedis、Lettuce、Redisson对比"></a>RedisTemplate、Jedis、Lettuce、Redisson对比</h1><p>以下是对以上Redis客户端库的对比分析。</p>
 <h2 id="RedisTemplate"><a href="#RedisTemplate" class="headerlink" title="RedisTemplate"></a>RedisTemplate</h2><p>来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问题，此外提供了对Redis Pub&#x2F;Sub模型的抽象。但是需要注意的是，它需要Spring环境的支撑存在。</p>
 <h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><p>Jedis是Redis的Java实现的客户端，其API提供了比较全面的Redis命令的支持。Jedis用法简便，支持排序、连接池、管道等操作。另外，使用Jedis开发者需要提前了解redis所有命令和参数，才能开发出一个完善的系统，因此上手难度会比较大。</p>
@@ -658,7 +658,7 @@ public class LocalFileUtils &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/27/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
+    <url>/2024/04/01/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
     <content><![CDATA[<p>根据搜索结果，注册AWS（亚马逊云服务）账号并申请全球云服务器12个月免费试用的详细教程如下：</p>
 <h3 id="注册AWS账户准备条件："><a href="#注册AWS账户准备条件：" class="headerlink" title="注册AWS账户准备条件："></a>注册AWS账户准备条件：</h3><ol>
 <li><strong>邮箱</strong>：一个有效的电子邮箱地址，建议使用国外邮箱如Gmail、Outlook、Hotmail等，避免使用国内邮箱如qq、163等。</li>
@@ -1082,7 +1082,7 @@ public class LocalFileUtils &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/03/27/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/</url>
+    <url>/2024/04/01/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/</url>
     <content><![CDATA[<p>当然，以下是完整的美化后的博客文章，包括完整的代码示例：</p>
 <hr>
 <h1 id="Spring-Boot-实现延时队列"><a href="#Spring-Boot-实现延时队列" class="headerlink" title="Spring Boot 实现延时队列"></a>Spring Boot 实现延时队列</h1><p><strong>发布日期:</strong> 2024-03-18<br><strong>类别:</strong> Spring Boot</p>
@@ -1109,5 +1109,84 @@ public class LocalFileUtils &#123;
 <hr>
 <p>这篇文章提供了一个使用Spring Boot和<code>DelayQueue</code>实现延时队列的完整示例，包括服务定义、消费者实现以及启动时的触发逻辑。希望这对您实现类似功能有所帮助。如果您有任何疑问或需要进一步的帮助，请随时联系。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>web3学习大纲</title>
+    <url>/2024/03/12/web3/01_web3%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2/</url>
+    <content><![CDATA[<h3 id="第1周-ERC-20、其变体和代币销售"><a href="#第1周-ERC-20、其变体和代币销售" class="headerlink" title="第1周 - ERC-20、其变体和代币销售"></a>第1周 - ERC-20、其变体和代币销售</h3><ul>
+<li>学习ERC-20标准和它的实现细节。</li>
+<li>探讨ERC-20代币的不同变体，如ERC-223和ERC-667。</li>
+<li>了解代币销售的流程和最佳实践。</li>
+<li>创建和部署自己的ERC-20代币。</li>
+</ul>
+<h3 id="第2周-ERC721、其变体、市场和质押"><a href="#第2周-ERC721、其变体、市场和质押" class="headerlink" title="第2周 - ERC721、其变体、市场和质押"></a>第2周 - ERC721、其变体、市场和质押</h3><ul>
+<li>掌握ERC721标准和非同质化代币（NFT）的概念。</li>
+<li>学习市场上流行的NFT项目和它们的用例。</li>
+<li>了解质押NFT的机制和它的潜在用途。</li>
+<li>开发一个简单的NFT市场原型。</li>
+</ul>
+<h3 id="第3周-ERC1155、ethers-js、metamask、构建前端应用程序"><a href="#第3周-ERC1155、ethers-js、metamask、构建前端应用程序" class="headerlink" title="第3周 - ERC1155、ethers.js、metamask、构建前端应用程序"></a>第3周 - ERC1155、ethers.js、metamask、构建前端应用程序</h3><ul>
+<li>学习ERC1155多代币标准的基础知识。</li>
+<li>熟悉ethers.js库和MetaMask的使用。</li>
+<li>构建一个具有前端用户界面的区块链应用程序。</li>
+<li>了解如何与智能合约交互并展示数据。</li>
+</ul>
+<h3 id="第4周-安全帽、单元测试、突变测试和静态分析"><a href="#第4周-安全帽、单元测试、突变测试和静态分析" class="headerlink" title="第4周 - 安全帽、单元测试、突变测试和静态分析"></a>第4周 - 安全帽、单元测试、突变测试和静态分析</h3><ul>
+<li>学习Solidity的安全最佳实践。</li>
+<li>编写单元测试和突变测试来验证智能合约的健壮性。</li>
+<li>了解静态分析工具的使用和重要性。</li>
+<li>完成一系列关于安全性的练习和案例研究。</li>
+</ul>
+<h3 id="第5周-以太坊客户端：跟踪日志和其他链上数据"><a href="#第5周-以太坊客户端：跟踪日志和其他链上数据" class="headerlink" title="第5周 - 以太坊客户端：跟踪日志和其他链上数据"></a>第5周 - 以太坊客户端：跟踪日志和其他链上数据</h3><ul>
+<li>学习如何使用以太坊客户端来跟踪和分析链上数据。</li>
+<li>构建一个仪表板来实时监控和展示区块链活动。</li>
+<li>了解如何从区块链中提取有价值的信息。</li>
+</ul>
+<h3 id="第6-7周-黑客练习-2-10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞"><a href="#第6-7周-黑客练习-2-10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞" class="headerlink" title="第6-7周 - 黑客练习 2&#x2F;10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞"></a>第6-7周 - 黑客练习 2&#x2F;10：重入、不安全的随机性、糟糕的访问控制和其他常见漏洞</h3><ul>
+<li>通过实际的黑客练习来识别和利用智能合约中的常见漏洞。</li>
+<li>学习如何修复这些漏洞并加强合约的安全性。</li>
+<li>理解攻击向量和防御策略。</li>
+</ul>
+<h3 id="第8周-EVM-深入研究，Gas-优化"><a href="#第8周-EVM-深入研究，Gas-优化" class="headerlink" title="第8周 - EVM 深入研究，Gas 优化"></a>第8周 - EVM 深入研究，Gas 优化</h3><ul>
+<li>深入了解以太坊虚拟机（EVM）的工作原理。</li>
+<li>学习如何优化智能合约的Gas消耗。</li>
+<li>通过案例分析来理解Gas优化的重要性。</li>
+</ul>
+<h3 id="第9周-Advanced-Solidity：OpenZeppelin-和高级编程模式的完整浏览"><a href="#第9周-Advanced-Solidity：OpenZeppelin-和高级编程模式的完整浏览" class="headerlink" title="第9周 - Advanced Solidity：OpenZeppelin 和高级编程模式的完整浏览"></a>第9周 - Advanced Solidity：OpenZeppelin 和高级编程模式的完整浏览</h3><ul>
+<li>学习OpenZeppelin库和它的安全合约模块。</li>
+<li>掌握Solidity中的高级编程模式和最佳实践。</li>
+<li>完成一系列高级编程练习。</li>
+</ul>
+<h3 id="第10-11周-Yul-和-Assembly：完全在汇编中构建一个不平凡的智能合约"><a href="#第10-11周-Yul-和-Assembly：完全在汇编中构建一个不平凡的智能合约" class="headerlink" title="第10-11周 - Yul 和 Assembly：完全在汇编中构建一个不平凡的智能合约"></a>第10-11周 - Yul 和 Assembly：完全在汇编中构建一个不平凡的智能合约</h3><ul>
+<li>学习Yul语言和汇编器的基础知识。</li>
+<li>编写和优化Yul代码来构建高性能的智能合约。</li>
+<li>了解Yul和Solidity之间的转换和互操作性。</li>
+</ul>
+<h3 id="第12周-智能合约升级模式：UUPS、Metamorphic智能合约等升级模式"><a href="#第12周-智能合约升级模式：UUPS、Metamorphic智能合约等升级模式" class="headerlink" title="第12周 - 智能合约升级模式：UUPS、Metamorphic智能合约等升级模式"></a>第12周 - 智能合约升级模式：UUPS、Metamorphic智能合约等升级模式</h3><ul>
+<li>学习不同的智能合约升级模式，如UUPS和Metamorphic。</li>
+<li>理解升级智能合约的安全性考虑和挑战。</li>
+<li>完成关于智能合约升级的实践项目。</li>
+</ul>
+<h3 id="第13周-公共签名以及如何破解它们。状态通道和其他与签名相关的模式"><a href="#第13周-公共签名以及如何破解它们。状态通道和其他与签名相关的模式" class="headerlink" title="第13周 - 公共签名以及如何破解它们。状态通道和其他与签名相关的模式"></a>第13周 - 公共签名以及如何破解它们。状态通道和其他与签名相关的模式</h3><ul>
+<li>学习公共签名的概念和它的潜在风险。</li>
+<li>探索状态通道和其他高级签名模式。</li>
+<li>构建一个简单的状态通道原型。</li>
+</ul>
+<h3 id="第14-15周-Defi-协议和黑客"><a href="#第14-15周-Defi-协议和黑客" class="headerlink" title="第14-15周 - Defi 协议和黑客"></a>第14-15周 - Defi 协议和黑客</h3><ul>
+<li>深入了解Defi协议的工作原理和它们的安全性。</li>
+<li>通过分析和黑客练习来识别Defi协议中的漏洞。</li>
+<li>学习如何设计和实现安全的Defi应用。</li>
+</ul>
+<h3 id="第16周-Capstone-1-3-和-Chainlink-预言机"><a href="#第16周-Capstone-1-3-和-Chainlink-预言机" class="headerlink" title="第16周 - Capstone 1&#x2F;3 和 Chainlink 预言机"></a>第16周 - Capstone 1&#x2F;3 和 Chainlink 预言机</h3><ul>
+<li>开始一个综合性的项目，将Chainlink预言机集成到Defi应用中。</li>
+<li>学习如何使用预言机来提供现实世界的数据给智能合约。</li>
+</ul>
+<h3 id="可选的扩展课程"><a href="#可选的扩展课程" class="headerlink" title="可选的扩展课程"></a>可选的扩展课程</h3><ul>
+<li>这些额外的周提供了更高级的主题和实践机会，包括区块链开发运营、智能合约模糊测试、跨链技术、桥梁、L2解决方案、ERC20标准的演变、符号执行和其他高级安全技术。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>web3</category>
+      </categories>
   </entry>
 </search>
