@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title></title>
-    <url>/2024/04/01/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
+    <url>/2024/04/07/Redis/Redis%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AF%B9%E6%AF%94/</url>
     <content><![CDATA[<h1 id="RedisTemplate、Jedis、Lettuce、Redisson对比"><a href="#RedisTemplate、Jedis、Lettuce、Redisson对比" class="headerlink" title="RedisTemplate、Jedis、Lettuce、Redisson对比"></a>RedisTemplate、Jedis、Lettuce、Redisson对比</h1><p>以下是对以上Redis客户端库的对比分析。</p>
 <h2 id="RedisTemplate"><a href="#RedisTemplate" class="headerlink" title="RedisTemplate"></a>RedisTemplate</h2><p>来源于Spring Data Redis, 它是Spring提供的一套对Redis进行操作的模板类。它的最大优点在于提供了对Key、String、List、Set、ZSet、Hash的操作抽象，其次是解决了在操作过程中的事务、批处理及Pipeline等问题，此外提供了对Redis Pub&#x2F;Sub模型的抽象。但是需要注意的是，它需要Spring环境的支撑存在。</p>
 <h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><p>Jedis是Redis的Java实现的客户端，其API提供了比较全面的Redis命令的支持。Jedis用法简便，支持排序、连接池、管道等操作。另外，使用Jedis开发者需要提前了解redis所有命令和参数，才能开发出一个完善的系统，因此上手难度会比较大。</p>
@@ -140,7 +140,10 @@
   <entry>
     <title>常用Linux命令</title>
     <url>/2024/03/12/linux/linux%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>##文件复制移动<br>A目录到B目录复制所有文件<br>mv &#x2F;path&#x2F;a&#x2F;* . &#x2F;b<br>需要覆盖文件 mv -f<br>##权限<br>赋予当前文件夹下所有sh文件可执行权限  </p>
+    <content><![CDATA[<p>##文件移动复制相关</p>
+<p>###文件复制移动<br>A目录到B目录复制所有文件<br>mv &#x2F;path&#x2F;a&#x2F;* . &#x2F;b<br>需要覆盖文件 mv -f </p>
+<p>###递归复制替换文件和文件夹到当前目录<br>rsync -av –exclude&#x3D;’.*’ 17&#x2F; .</p>
+<p>##权限<br>赋予当前文件夹下所有sh文件可执行权限  </p>
 <p>chmod +x *.sh</p>
 ]]></content>
       <categories>
@@ -658,7 +661,7 @@ public class LocalFileUtils &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/04/01/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
+    <url>/2024/04/07/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B5%8B%E8%AF%84/</url>
     <content><![CDATA[<p>根据搜索结果，注册AWS（亚马逊云服务）账号并申请全球云服务器12个月免费试用的详细教程如下：</p>
 <h3 id="注册AWS账户准备条件："><a href="#注册AWS账户准备条件：" class="headerlink" title="注册AWS账户准备条件："></a>注册AWS账户准备条件：</h3><ol>
 <li><strong>邮箱</strong>：一个有效的电子邮箱地址，建议使用国外邮箱如Gmail、Outlook、Hotmail等，避免使用国内邮箱如qq、163等。</li>
@@ -1082,7 +1085,7 @@ public class LocalFileUtils &#123;
   </entry>
   <entry>
     <title></title>
-    <url>/2024/04/01/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/</url>
+    <url>/2024/04/07/springboot/java%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/</url>
     <content><![CDATA[<p>当然，以下是完整的美化后的博客文章，包括完整的代码示例：</p>
 <hr>
 <h1 id="Spring-Boot-实现延时队列"><a href="#Spring-Boot-实现延时队列" class="headerlink" title="Spring Boot 实现延时队列"></a>Spring Boot 实现延时队列</h1><p><strong>发布日期:</strong> 2024-03-18<br><strong>类别:</strong> Spring Boot</p>
